@@ -78,6 +78,8 @@ How to add the controllers to Webots and run the simulation
 10. Then click play button
 11. Wait until the crazyflie hovers and press keyboard "a" button to start autonomous data collection script.
 
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=yeko31.ego-intersect)  
+⭐ If you find this project useful, please give it a star!
 
 
 
