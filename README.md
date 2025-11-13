@@ -5,6 +5,22 @@ The project leverages **deep learning models**, **simulation environments**, and
 
 ---
 
+## 🚁 Real-World Deployment: Crazyflie Nano-Drone
+
+Beyond simulation, we deployed the navigation pipeline on a **Crazyflie nano-drone**.  
+
+The workflow consists of:
+1. **Streaming camera frames** from the onboard Crazyflie camera.  
+2. **Real-time processing** on an external computer using the trained CNN models.  
+3. **Automated control commands** sent back to the drone for navigation.  
+
+<img src="https://github.com/yeko31/ego-intersect/raw/main/webots/Videos/real_world.gif" width="600">
+
+- The system successfully detects intersections and navigates autonomously in a test environment.  
+- Data is logged and categorized into the standard **left_right_forward folder format** for further analysis.
+
+---
+
 ## 🧠 Grad-CAM Analysis
 
 To understand and visualize the decision-making of our CNN models, we used **Grad-CAM** (Gradient-weighted Class Activation Mapping).  
@@ -21,23 +37,7 @@ Grad-CAM highlights regions of the input image that contribute most to the netwo
 
 > Both models demonstrate effective localization of intersection regions and relevant navigation cues.
 
----
 
-## 🚁 Real-World Deployment: Crazyflie Nano-Drone
-
-Beyond simulation, we deployed the navigation pipeline on a **Crazyflie nano-drone**.  
-
-The workflow consists of:
-1. **Streaming camera frames** from the onboard Crazyflie camera.  
-2. **Real-time processing** on an external computer using the trained CNN models.  
-3. **Automated control commands** sent back to the drone for navigation.  
-
-<img src="https://github.com/yeko31/ego-intersect/raw/main/webots/Videos/real_world.gif" width="600">
-
-- The system successfully detects intersections and navigates autonomously in a test environment.  
-- Data is logged and categorized into the standard **left_right_forward folder format** for further analysis.
-
----
 
 ## 📂 Folder Structure Highlights
 
