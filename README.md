@@ -37,10 +37,14 @@ Grad-CAM highlights regions of the input image that contribute most to the netwo
 ## 📊 Results
 
 ### 🔹 Multi Class Classification
-![MobileNetV2 Grad-CAM](webots/GradCAM/mobilenetv2_example.png)
+<img src="https://github.com/yeko31/ego-intersect/raw/main/webots/Videos/multi_class.jpg" width="500">
+
   
 ### 🔹 Multi Label Classification
-![MobileNetV2 Grad-CAM](webots/GradCAM/mobilenetv2_example.png)
+<img src="https://github.com/yeko31/ego-intersect/raw/main/webots/Videos/multi_label.jpg" width="500">
+
+### 🔹 Decomposition of labels
+<img src="https://github.com/yeko31/ego-intersect/raw/main/webots/Videos/orthogonal_study.jpg" width="500">
 
 
 ## 📂 Folder Structure Highlights
