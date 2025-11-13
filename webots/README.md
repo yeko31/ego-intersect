@@ -15,7 +15,12 @@ During each simulation run, the controller:
 - **Organizes outputs into folders** corresponding to possible movement directions at intersections.
 
 Each folder is named using the format:
+For example:
+- `1_0_1` → Left and Forward paths are available  
+- `1_1_0` → Left and Right paths are available  
+- `0_1_0` → Only Right turn possible  
 
+This structure simplifies dataset creation and intersection-based decision training.
 
 ---
 
