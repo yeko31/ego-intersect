@@ -47,13 +47,14 @@ Grad-CAM highlights regions of the input image that contribute most to the netwo
 <img src="https://github.com/yeko31/ego-intersect/raw/main/webots/Videos/orthogonal_study.jpg" width="500">
 
 
-## 📂 Folder Structure Highlights
+## 📂 File Highlights
 
-- **GradCAM/** – Contains Grad-CAM results for ResNet50 and MobileNetV2.  
-- **RealWorld/** – Scripts and logs for Crazyflie deployment and testing.  
+- **webots/** – All the scripts used in webots experiments.
+- **real_world/** – All the scripts used in real world experiments.  
+- **gradCAM/** – Contains Grad-CAM script which was used to get results for ResNet50 and MobileNetV2.  
+- **test_script/** – Scripts of the unseen data validation.  
 - **Videos/** – Simulation and real-world demo videos.  
-- **Controllers/** – Automated Webots controllers for navigation.  
-- **Worlds/** – Webots simulation environments.
+
 
 ---
 
