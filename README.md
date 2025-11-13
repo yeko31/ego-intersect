@@ -26,17 +26,21 @@ The workflow consists of:
 To understand and visualize the decision-making of our CNN models, we used **Grad-CAM** (Gradient-weighted Class Activation Mapping).  
 Grad-CAM highlights regions of the input image that contribute most to the network’s predictions, providing insight into **which visual features the network focuses on** during navigation and intersection detection.
 
+
 ### 🔹 Models Analyzed
 - **ResNet50**  
   High-capacity model used for detailed feature extraction. Grad-CAM analysis shows strong attention on **lane markings and intersection cues**.  
-  ![ResNet50 Grad-CAM](webots/GradCAM/resnet50_example.png)
 
 - **MobileNetV2**  
   Lightweight model suitable for real-time deployment on resource-limited hardware. Grad-CAM highlights key road features while maintaining efficiency.  
-  ![MobileNetV2 Grad-CAM](webots/GradCAM/mobilenetv2_example.png)
 
-> Both models demonstrate effective localization of intersection regions and relevant navigation cues.
+## 📊 Results
 
+### 🔹 Multi Class Classification
+![MobileNetV2 Grad-CAM](webots/GradCAM/mobilenetv2_example.png)
+  
+### 🔹 Multi Label Classification
+![MobileNetV2 Grad-CAM](webots/GradCAM/mobilenetv2_example.png)
 
 
 ## 📂 Folder Structure Highlights
