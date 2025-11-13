@@ -8,7 +8,7 @@ The focus of this work is on **detecting and identifying intersections** during 
 ## 🧭 Project Overview
 | Description | Video |
 |--------------|--------|
-| Full Navigation Demo | <video src="Videos/1.webm" width="160" controls></video> |
+| Full Navigation Demo | <video src="ego-intersect/webots/Videos1.webm" width="160" controls></video> |
 | Intersection Detection | <video src="Videos/2.webm" width="160" controls></video> |
 | Full Navigation Demo | <video src="Videos/3.webm" width="160" controls></video> |
 | Intersection Detection | <video src="Videos/4.webm" width="160" controls></video> |
