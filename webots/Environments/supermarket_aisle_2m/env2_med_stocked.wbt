@@ -1,0 +1,5564 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Roughcast.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/Window.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/MattePaint.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/Door.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/plants/protos/PottedTree.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/cabinet/protos/Cabinet.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/PaintedWood.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/samples/contests/rockin/protos/RoCKInShelf.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/cabinet/protos/CabinetHandle.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/toys/protos/RubberDuck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/kitchen/breakfast/protos/HoneyJar.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/kitchen/breakfast/protos/JamJar.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/drinks/protos/Can.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/drinks/protos/BeerBottle.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/kitchen/breakfast/protos/BiscuitBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/kitchen/utensils/protos/Cookware.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/kitchen/utensils/protos/Carafe.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/kitchen/utensils/protos/Glass.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/kitchen/utensils/protos/Plate.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/kitchen/utensils/protos/Wineglass.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/fruits/protos/Orange.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/fruits/protos/Apple.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/balls/protos/Ball.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/balls/protos/FifaSoccerBall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/tools/protos/Hammer.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/tools/protos/Wrench.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/tools/protos/Screwdriver.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/drinks/protos/WaterBottle.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/lights/protos/CeilingSpotLight.proto"
+
+WorldInfo {
+  info [
+    "An office break room, surrounded by office desks."
+    "This world contains the domestic objects included in Webots."
+    "Doors are interactive."
+    "This means that a robot could open a drawer, leave an object inside it, and close it."
+  ]
+  title "Break Room"
+  basicTimeStep 20
+  FPS 30
+}
+Viewpoint {
+  orientation -0.29587511691209945 0.01344235639355158 0.9551320423097741 3.0548684857982984
+  position 19.161068051962935 0.20153283316528992 14.748317951005262
+}
+TexturedBackground {
+  texture "entrance_hall"
+  luminosity 0.5
+  skybox FALSE
+}
+TexturedBackgroundLight {
+  texture "entrance_hall"
+}
+Floor {
+  rotation 0 0 1 1.5708
+  name "floor1"
+  size 9.2 14
+  tileSize 0.4 0.4
+  appearance Parquetry {
+    colorOverride 1 0.662745 0.368627
+    textureTransform TextureTransform {
+      rotation 1.57
+      scale 0.4 0.4
+    }
+    IBLStrength 3
+  }
+}
+Floor {
+  rotation 0 0 1 1.5708
+  name "floor1(1)"
+  size 9.2 14
+  tileSize 0.4 0.4
+  appearance Parquetry {
+    colorOverride 1 0.662745 0.368627
+    textureTransform TextureTransform {
+      rotation 1.57
+      scale 0.4 0.4
+    }
+    IBLStrength 3
+  }
+}
+PottedTree {
+  translation -6.5 -4 0
+  name "Plant1"
+}
+Cabinet {
+  translation -7.02652 -2 1.2
+  name "MountWC1"
+  outerThickness 0.02
+  rowsHeights [
+    0.8
+  ]
+  columnsWidths [
+    0.9, 0.8, 0.8, 0.8
+  ]
+  layout [
+    "Drawer (1, 1, 1, 1, 1.5)"
+    "Drawer (2, 1, 1, 1, 1.5)"
+    "Drawer (3, 1, 1, 1, 1.5)"
+    "Drawer (4, 1, 1, 1, 1.5)"
+    "Shelf (1, 1, 0, 1)"
+    "Shelf (2, 1, 0, 1)"
+    "Shelf (3, 1, 0, 1)"
+  ]
+  handle CabinetHandle {
+    handleColor 0.533333 0.541176 0.521569
+  }
+  primaryAppearance MattePaint {
+    baseColor 0.729412 0.741176 0.713725
+  }
+  secondaryAppearance MattePaint {
+    baseColor 0.666667 0.333333 0
+  }
+}
+Cabinet {
+  translation -7.02652 2 1.2
+  name "MountWC2"
+  outerThickness 0.02
+  rowsHeights [
+    0.8
+  ]
+  columnsWidths [
+    0.9, 0.8, 0.8, 0.8
+  ]
+  layout [
+    "Drawer (1, 1, 1, 1, 1.5)"
+    "Drawer (2, 1, 1, 1, 1.5)"
+    "Drawer (3, 1, 1, 1, 1.5)"
+    "Drawer (4, 1, 1, 1, 1.5)"
+    "Shelf (1, 1, 0, 1)"
+    "Shelf (2, 1, 0, 1)"
+    "Shelf (3, 1, 0, 1)"
+  ]
+  handle CabinetHandle {
+    handleColor 0.533333 0.541176 0.521569
+  }
+  primaryAppearance MattePaint {
+    baseColor 0.729412 0.741176 0.713725
+  }
+  secondaryAppearance MattePaint {
+    baseColor 0.666667 0.333333 0
+  }
+}
+DEF C_GROUP1 Pose {
+  translation -0.71 -0.27242 0
+  rotation 0 1 0 0
+  children [
+    Cabinet {
+      translation -2.45 2.77 0
+      rotation 0 0 1 3.14159
+      name "C1"
+      depth 0.3
+      innerThickness 0
+      outerThickness 0
+      rowsHeights [
+        0.4, 0.15, 0.15, 0.15, 0.15
+      ]
+      columnsWidths [
+        0.44, 0.2, 0.2
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+    Cabinet {
+      translation -1 2.77 0
+      rotation 0 0 -0.9999999999999999 1.5707953071795862
+      name "C2"
+      depth 0.45
+      innerThickness 0.01
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        2.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.47451 0.67451 1
+      }
+    }
+    Cabinet {
+      translation -1 2.77088 0
+      rotation 0 0 1 1.5708
+      name "C3"
+      depth 0.45
+      innerThickness 0.01
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        2.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.560784 0.941176 0.643137
+      }
+    }
+    Cabinet {
+      translation 0.45 2.77 0
+      rotation 0 0 -1 5.307156870259904e-06
+      name "C4"
+      depth 0.3
+      innerThickness 0
+      outerThickness 0
+      rowsHeights [
+        0.4, 0.15, 0.15, 0.15, 0.15
+      ]
+      columnsWidths [
+        0.44, 0.2, 0.2
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+  ]
+}
+DEF C_GROUP2 Pose {
+  translation 4.35 -0.27242 0
+  rotation 0 1 0 0
+  children [
+    Cabinet {
+      translation -2.45 2.77 0
+      rotation 0 0 1 3.14159
+      name "C5"
+      depth 0.3
+      innerThickness 0
+      outerThickness 0
+      rowsHeights [
+        0.4, 0.15, 0.15, 0.15, 0.15
+      ]
+      columnsWidths [
+        0.44, 0.2, 0.2
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+    Cow {
+      translation -2.6213 2.5 0.44
+      rotation 0 0 1 3.14159
+      scale 0.07
+      name "cow(1)"
+    }
+    Deer {
+      translation -2.6213 2.6 0.44
+      rotation 0 0 1 3.14159
+      scale 0.08
+      name "deer(5)"
+    }
+    Deer {
+      translation -2.6213 2.7 0.44
+      rotation 0 0 1 3.14159
+      scale 0.08
+      name "deer(4)"
+    }
+    Deer {
+      translation -2.6213 2.8 0.44
+      rotation 0 0 1 3.14159
+      scale 0.08
+      name "deer(3)"
+    }
+    Horse {
+      translation -2.6213 2.9 0.44
+      rotation 0 0 1 3.14159
+      scale 0.06
+      name "horse(5)"
+    }
+    Horse {
+      translation -2.6213 2.97 0.44
+      rotation 0 0 1 3.14159
+      scale 0.06
+      name "horse(4)"
+    }
+    Horse {
+      translation -2.6213 3.04 0.44
+      rotation 0 0 1 3.14159
+      scale 0.06
+      name "horse(3)"
+    }
+    Rabbit {
+      translation -2.62 3.02 0.59
+      rotation 0 0 1 3.14159
+      scale 0.4
+      name "rabbit(5)"
+    }
+    Cat {
+      translation -2.65 2.6 0.74
+      rotation 0 0 1 3.14159
+      scale 0.3
+      name "cat(11)"
+    }
+    Cat {
+      translation -2.65 2.7 0.74
+      rotation 0 0 1 3.14159
+      scale 0.3
+      name "cat(10)"
+    }
+    Cat {
+      translation -2.65 2.8 0.74
+      rotation 0 0 1 3.14159
+      scale 0.3
+      name "cat(9)"
+    }
+    Cat {
+      translation -2.65 2.91 0.74
+      rotation 0 0 1 3.14159
+      scale 0.3
+      name "cat(8)"
+    }
+    Cat {
+      translation -2.65 3.028 0.74
+      rotation 0 0 1 3.14159
+      scale 0.3
+      name "cat(7)"
+    }
+    Fox {
+      translation -2.67 2.5 0.03
+      rotation 0 0 1 3.14159
+      scale 0.5
+      name "fox(1)"
+    }
+    Dog {
+      translation -2.65 2.8 0.03
+      rotation 0 0 1 3.14159
+      scale 0.3
+      name "dog(13)"
+    }
+    Cat {
+      translation -2.67 3.028 0.02
+      rotation 0 0 1 3.14159
+      scale 0.5
+      name "cat(13)"
+    }
+    RubberDuck {
+      translation -2.62 2.45 0.609
+      rotation 0 0 1 3.14159
+      name "rubber duck(7)"
+    }
+    RubberDuck {
+      translation -2.62 2.65 0.609
+      rotation 0 0 1 3.14159
+      name "rubber duck(6)"
+    }
+    Rabbit {
+      translation -2.62 2.84 0.59
+      rotation 0 0 1 3.14159
+      scale 0.4
+      name "rabbit(7)"
+    }
+    Rabbit {
+      translation -2.62 2.93 0.59
+      rotation 0 0 1 3.14159
+      scale 0.4
+      name "rabbit(6)"
+    }
+    Rabbit {
+      translation -2.62 3.11 0.59
+      rotation 0 0 1 3.14159
+      scale 0.4
+      name "rabbit(4)"
+    }
+    Cat {
+      translation -2.65 2.5 0.74
+      rotation 0 0 1 3.14159
+      scale 0.3
+      name "cat(12)"
+    }
+    Dog {
+      translation -2.65 2.5 0.889
+      rotation 0 0 1 3.14159
+      scale 0.15
+      name "dog(12)"
+    }
+    Dog {
+      translation -2.65 2.6 0.889
+      rotation 0 0 1 3.14159
+      scale 0.15
+      name "dog(11)"
+    }
+    Dog {
+      translation -2.65 2.7 0.889
+      rotation 0 0 1 3.14159
+      scale 0.15
+      name "dog(10)"
+    }
+    Dog {
+      translation -2.65 2.8 0.889
+      rotation 0 0 1 3.14159
+      scale 0.15
+      name "dog(9)"
+    }
+    Dog {
+      translation -2.65 2.91 0.889
+      rotation 0 0 1 3.14159
+      scale 0.15
+      name "dog(8)"
+    }
+    Dog {
+      translation -2.65 3.028 0.889
+      rotation 0 0 1 3.14159
+      scale 0.15
+      name "dog(7)"
+    }
+    Cabinet {
+      translation -1 2.77 0
+      rotation 0 0 -0.9999999999999999 1.5707953071795862
+      name "C6"
+      depth 0.45
+      innerThickness 0.01
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        2.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.47451 0.67451 1
+      }
+    }
+    HoneyJar {
+      translation -2 2.61 0.03
+      name "honey jar(22)"
+      color 0.733333 0.733333 0.733333
+    }
+    HoneyJar {
+      translation -1.7 2.61 0.03
+      name "honey jar(22)"
+      color 0.733333 0.733333 0.733333
+    }
+    HoneyJar {
+      translation -1.4 2.61 0.03
+      name "honey jar(22)"
+      color 0.733333 0.733333 0.733333
+    }
+    HoneyJar {
+      translation -1.1 2.61 0.03
+      name "honey jar(22)"
+      color 0.733333 0.733333 0.733333
+    }
+    HoneyJar {
+      translation -0.8 2.61 0.03
+      name "honey jar(22)"
+      color 0.733333 0.733333 0.733333
+    }
+    HoneyJar {
+      translation -0.5 2.61 0.03
+      name "honey jar(22)"
+      color 0.733333 0.733333 0.733333
+    }
+    HoneyJar {
+      translation -0.2 2.61 0.03
+      name "honey jar(22)"
+      color 0.733333 0.733333 0.733333
+    }
+    HoneyJar {
+      translation 0.1 2.61 0.03
+      name "honey jar(22)"
+      color 0.733333 0.733333 0.733333
+    }
+    HoneyJar {
+      translation 0.1 2.61 0.234
+      name "honey jar(22)"
+      color 0 0 0.447059
+    }
+    HoneyJar {
+      translation -0.3 2.61 0.234
+      name "honey jar(22)"
+      color 0 0 0.447059
+    }
+    HoneyJar {
+      translation -0.7 2.61 0.234
+      name "honey jar(22)"
+      color 0 0 0.447059
+    }
+    HoneyJar {
+      translation -1.1 2.61 0.234
+      name "honey jar(22)"
+      color 0 0 0.447059
+    }
+    HoneyJar {
+      translation -1.5 2.61 0.234
+      name "honey jar(22)"
+      color 0 0 0.447059
+    }
+    HoneyJar {
+      translation -1.9 2.61 0.234
+      name "honey jar(22)"
+      color 0 0 0.447059
+    }
+    HoneyJar {
+      translation -1.9 2.61 0.436
+      name "honey jar(22)"
+      color 0.701961 1 0.65098
+    }
+    HoneyJar {
+      translation -1.6 2.61 0.436
+      name "honey jar(22)"
+      color 0.701961 1 0.65098
+    }
+    HoneyJar {
+      translation -1.2 2.61 0.436
+      name "honey jar(22)"
+      color 0.701961 1 0.65098
+    }
+    HoneyJar {
+      translation -0.8 2.61 0.436
+      name "honey jar(22)"
+      color 0.701961 1 0.65098
+    }
+    HoneyJar {
+      translation -0.4 2.61 0.436
+      name "honey jar(22)"
+      color 0.701961 1 0.65098
+    }
+    HoneyJar {
+      translation -0.4 2.61 0.635
+      name "honey jar(22)"
+      color 0 0 1
+    }
+    HoneyJar {
+      translation -0.8 2.61 0.635
+      name "honey jar(22)"
+      color 0 0 1
+    }
+    HoneyJar {
+      translation -1.2 2.61 0.635
+      name "honey jar(22)"
+      color 0 0 1
+    }
+    HoneyJar {
+      translation -1.6 2.61 0.635
+      name "honey jar(22)"
+      color 0 0 1
+    }
+    HoneyJar {
+      translation -2 2.61 0.635
+      name "honey jar(22)"
+      color 0 0 1
+    }
+    HoneyJar {
+      translation -1.8 2.61 0.835
+      name "honey jar(22)"
+      color 0.196078 0.196078 0.196078
+    }
+    HoneyJar {
+      translation -1.4 2.61 0.835
+      name "honey jar(22)"
+      color 0.196078 0.196078 0.196078
+    }
+    HoneyJar {
+      translation -1 2.61 0.835
+      name "honey jar(22)"
+      color 0.196078 0.196078 0.196078
+    }
+    HoneyJar {
+      translation -0.6 2.61 0.835
+      name "honey jar(22)"
+      color 0.196078 0.196078 0.196078
+    }
+    HoneyJar {
+      translation -0.2 2.61 0.835
+      name "honey jar(22)"
+      color 0.196078 0.196078 0.196078
+    }
+    HoneyJar {
+      translation 0.2 2.61 0.835
+      name "honey jar(22)"
+      color 0.196078 0.196078 0.196078
+    }
+    HoneyJar {
+      translation -2.2 2.61 0.835
+      name "honey jar(22)"
+      color 0.196078 0.196078 0.196078
+    }
+    HoneyJar {
+      translation 0 2.61 0.635
+      name "honey jar(22)"
+      color 0 0 1
+    }
+    HoneyJar {
+      translation 0.3 2.61 0.635
+      name "honey jar(22)"
+      color 0 0 1
+    }
+    HoneyJar {
+      translation 0 2.61 0.436
+      name "honey jar(22)"
+      color 0.701961 1 0.65098
+    }
+    HoneyJar {
+      translation -2.3 2.61 0.234
+      name "honey jar(22)"
+      color 0 0 0.447059
+    }
+    Cabinet {
+      translation -1 2.77088 0
+      rotation 0 0 1 1.5708
+      name "C7"
+      depth 0.45
+      innerThickness 0.01
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        2.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.560784 0.941176 0.643137
+      }
+    }
+    HoneyJar {
+      translation 0.1 3.1 0.24
+      name "honey jar(22)"
+      color 0.223529 0.666667 0.631373
+    }
+    HoneyJar {
+      translation 0.1 3.1 0.435
+      name "honey jar(22)"
+      color 0.8 0.533333 0
+    }
+    HoneyJar {
+      translation -0.2 3.1 0.435
+      name "honey jar(22)"
+      color 0.8 0.533333 0
+    }
+    HoneyJar {
+      translation -0.5 3.1 0.435
+      name "honey jar(22)"
+      color 0.8 0.533333 0
+    }
+    HoneyJar {
+      translation -0.8 3.1 0.435
+      name "honey jar(22)"
+      color 0.8 0.533333 0
+    }
+    HoneyJar {
+      translation -1.1 3.1 0.435
+      name "honey jar(22)"
+      color 0.8 0.533333 0
+    }
+    HoneyJar {
+      translation -1.4 3.1 0.435
+      name "honey jar(22)"
+      color 0.8 0.533333 0
+    }
+    HoneyJar {
+      translation -1.7 3.1 0.435
+      name "honey jar(22)"
+      color 0.8 0.533333 0
+    }
+    HoneyJar {
+      translation -2 3.1 0.435
+      name "honey jar(22)"
+      color 0.8 0.533333 0
+    }
+    HoneyJar {
+      translation -2 3.1 0.634
+      name "honey jar(22)"
+      color 0.156863 0 0.47451
+    }
+    HoneyJar {
+      translation -1.7 3.1 0.634
+      name "honey jar(22)"
+      color 0.156863 0 0.47451
+    }
+    HoneyJar {
+      translation -1.4 3.1 0.634
+      name "honey jar(22)"
+      color 0.156863 0 0.47451
+    }
+    HoneyJar {
+      translation -1.1 3.1 0.634
+      name "honey jar(22)"
+      color 0.156863 0 0.47451
+    }
+    HoneyJar {
+      translation -0.8 3.1 0.634
+      name "honey jar(22)"
+      color 0.156863 0 0.47451
+    }
+    HoneyJar {
+      translation -0.5 3.1 0.634
+      name "honey jar(22)"
+      color 0.156863 0 0.47451
+    }
+    HoneyJar {
+      translation -0.2 3.1 0.634
+      name "honey jar(22)"
+      color 0.156863 0 0.47451
+    }
+    HoneyJar {
+      translation 0.1 3.1 0.634
+      name "honey jar(22)"
+      color 0.156863 0 0.47451
+    }
+    HoneyJar {
+      translation 0.1 3.1 0.834
+      name "honey jar(22)"
+      color 0.0745098 0.113725 0
+    }
+    HoneyJar {
+      translation -0.2 3.1 0.834
+      name "honey jar(22)"
+      color 0.0745098 0.113725 0
+    }
+    HoneyJar {
+      translation -0.5 3.1 0.834
+      name "honey jar(22)"
+      color 0.0745098 0.113725 0
+    }
+    HoneyJar {
+      translation -0.8 3.1 0.834
+      name "honey jar(22)"
+      color 0.0745098 0.113725 0
+    }
+    HoneyJar {
+      translation -1.1 3.1 0.834
+      name "honey jar(22)"
+      color 0.0745098 0.113725 0
+    }
+    HoneyJar {
+      translation -1.4 3.1 0.834
+      name "honey jar(22)"
+      color 0.0745098 0.113725 0
+    }
+    HoneyJar {
+      translation -1.7 3.1 0.834
+      name "honey jar(22)"
+      color 0.0745098 0.113725 0
+    }
+    HoneyJar {
+      translation -2 3.1 0.834
+      name "honey jar(22)"
+      color 0.0745098 0.113725 0
+    }
+    HoneyJar {
+      translation -2.3 3.1 0.834
+      name "honey jar(22)"
+      color 0.0745098 0.113725 0
+    }
+    HoneyJar {
+      translation -2.3 3.1 0.634
+      name "honey jar(22)"
+      color 0.156863 0 0.47451
+    }
+    HoneyJar {
+      translation -0.2 3.1 0.24
+      name "honey jar(22)"
+      color 0.223529 0.666667 0.631373
+    }
+    HoneyJar {
+      translation -0.5 3.1 0.24
+      name "honey jar(22)"
+      color 0.223529 0.666667 0.631373
+    }
+    HoneyJar {
+      translation -0.8 3.1 0.24
+      name "honey jar(22)"
+      color 0.223529 0.666667 0.631373
+    }
+    HoneyJar {
+      translation -1.1 3.1 0.24
+      name "honey jar(22)"
+      color 0.223529 0.666667 0.631373
+    }
+    HoneyJar {
+      translation -1.4 3.1 0.24
+      name "honey jar(22)"
+      color 0.223529 0.666667 0.631373
+    }
+    HoneyJar {
+      translation -1.7 3.1 0.24
+      name "honey jar(22)"
+      color 0.223529 0.666667 0.631373
+    }
+    HoneyJar {
+      translation -2 3.1 0.24
+      name "honey jar(22)"
+      color 0.223529 0.666667 0.631373
+    }
+    HoneyJar {
+      translation -2.3 3.1 0.24
+      name "honey jar(22)"
+      color 0.223529 0.666667 0.631373
+    }
+    DEF flacon MedicineBottle {
+      translation -2.3 3.1 0.07
+    }
+    DEF flacon MedicineBottle {
+      translation -2.1 3.1 0.07
+      name "medicine bottle(3)"
+    }
+    DEF flacon MedicineBottle {
+      translation -1.9 3.1 0.07
+      name "medicine bottle(1)"
+    }
+    DEF flacon MedicineBottle {
+      translation -1.7 3.1 0.07
+      name "medicine bottle(2)"
+    }
+    DEF flacon MedicineBottle {
+      translation -1.5 3.1 0.07
+      name "medicine bottle(4)"
+    }
+    DEF flacon MedicineBottle {
+      translation -1.3 3.1 0.07
+      name "medicine bottle(5)"
+    }
+    DEF flacon MedicineBottle {
+      translation -1.1 3.1 0.07
+      name "medicine bottle(6)"
+    }
+    DEF flacon MedicineBottle {
+      translation -0.9 3.1 0.07
+      name "medicine bottle(7)"
+    }
+    DEF flacon MedicineBottle {
+      translation -0.7 3.1 0.07
+      name "medicine bottle(8)"
+    }
+    DEF flacon MedicineBottle {
+      translation -0.5 3.1 0.07
+      name "medicine bottle(9)"
+    }
+    DEF flacon MedicineBottle {
+      translation -0.3 3.1 0.07
+      name "medicine bottle(10)"
+    }
+    DEF flacon MedicineBottle {
+      translation -0.1 3.1 0.07
+      name "medicine bottle(11)"
+    }
+    Cabinet {
+      translation 0.45 2.77 0
+      rotation 0 0 -1 5.307156870259904e-06
+      name "C8"
+      depth 0.3
+      innerThickness 0
+      outerThickness 0
+      rowsHeights [
+        0.4, 0.15, 0.15, 0.15, 0.15
+      ]
+      columnsWidths [
+        0.44, 0.2, 0.2
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+    JamJar {
+      translation 0.64 3.06 0.73
+      name "jam jar(7)"
+    }
+    JamJar {
+      translation 0.64 2.86 0.73
+      name "jam jar(6)"
+    }
+    JamJar {
+      translation 0.64 2.46 0.73
+      name "jam jar(4)"
+    }
+    JamJar {
+      translation 0.64 2.65 0.73
+      name "jam jar(5)"
+    }
+    Can {
+      translation 0.64 2.8 0.5
+      name "can(10)"
+    }
+    Can {
+      translation 0.64 2.63 0.5
+      name "can(9)"
+    }
+    Can {
+      translation 0.64 2.46 0.5
+      name "can(8)"
+    }
+    Can {
+      translation 0.64 3 0.5
+      name "can(11)"
+    }
+    BeerBottle {
+      translation 0.64 2.94 0.03
+      name "beer bottle(8)"
+    }
+    BeerBottle {
+      translation 0.64 3.11 0.03
+      name "beer bottle(9)"
+    }
+    BeerBottle {
+      translation 0.64 2.46 0.03
+      name "beer bottle(5)"
+    }
+    BeerBottle {
+      translation 0.64 2.78 0.03
+      name "beer bottle(7)"
+    }
+    BeerBottle {
+      translation 0.64 2.62 0.03
+      name "beer bottle(6)"
+    }
+  ]
+}
+DEF C_GROUP3 Pose {
+  translation 4.35 -2.4983 0
+  rotation 0 1 0 0
+  children [
+    Cabinet {
+      translation -2.45 2.77 0
+      rotation 0 0 1 3.14159
+      name "C9"
+      depth 0.3
+      innerThickness 0
+      outerThickness 0
+      rowsHeights [
+        0.4, 0.15, 0.15, 0.15, 0.15
+      ]
+      columnsWidths [
+        0.44, 0.2, 0.2
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+    Cabinet {
+      translation -1 2.77 0
+      rotation 0 0 -0.9999999999999999 1.5707953071795862
+      name "C10"
+      depth 0.45
+      innerThickness 0.01
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        2.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.862745 0.541176 0.866667
+      }
+    }
+    Cabinet {
+      translation -1 2.77088 0
+      rotation 0 0 1 1.5708
+      name "C11"
+      depth 0.45
+      innerThickness 0.01
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        2.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 1 0.607843 0.85098
+      }
+    }
+    Cabinet {
+      translation 0.45 2.77 0
+      rotation 0 0 -1 5.307156870259904e-06
+      name "C12"
+      depth 0.3
+      innerThickness 0
+      outerThickness 0
+      rowsHeights [
+        0.4, 0.15, 0.15, 0.15, 0.15
+      ]
+      columnsWidths [
+        0.44, 0.2, 0.2
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+  ]
+}
+DEF C_GROUP4 Pose {
+  translation 4.35 -4.7233 0
+  rotation 0 1 0 0
+  children [
+    Cabinet {
+      translation -2.45 2.77 0
+      rotation 0 0 1 3.14159
+      name "C13"
+      depth 0.3
+      innerThickness 0
+      outerThickness 0
+      rowsHeights [
+        0.4, 0.15, 0.15, 0.15, 0.15
+      ]
+      columnsWidths [
+        0.44, 0.2, 0.2
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+    FifaSoccerBall {
+      translation -2.65 2.5 0.098
+      name "fifa soccer ball(7)"
+      size 1
+    }
+    FifaSoccerBall {
+      translation -2.65 2.7 0.098
+      name "fifa soccer ball(6)"
+      size 1
+    }
+    FifaSoccerBall {
+      translation -2.65 2.9 0.098
+      name "fifa soccer ball(5)"
+      size 1
+    }
+    FifaSoccerBall {
+      translation -2.65 3.08 0.098
+      name "fifa soccer ball(4)"
+      size 1
+    }
+    Ball {
+      translation -2.6213 2.5 0.479
+      name "ball(38)"
+      radius 0.04
+    }
+    Ball {
+      translation -2.6213 2.6 0.479
+      name "ball(37)"
+      color 0.886275 1 0.988235
+      radius 0.04
+    }
+    Ball {
+      translation -2.6213 2.7 0.479
+      name "ball(36)"
+      color 0 0 0
+      radius 0.04
+    }
+    Ball {
+      translation -2.6213 2.8 0.479
+      name "ball(35)"
+      color 0.0235294 1 0.00784314
+      radius 0.04
+    }
+    Ball {
+      translation -2.6213 2.9 0.479
+      name "ball(34)"
+      color 1 0.0235294 0.121569
+      radius 0.04
+    }
+    Ball {
+      translation -2.6213 3 0.479
+      name "ball(33)"
+      color 0.345098 0.376471 1
+      radius 0.04
+    }
+    Ball {
+      translation -2.6213 3.1 0.479
+      name "ball(32)"
+      color 1 1 1
+      radius 0.04
+    }
+    Ball {
+      translation -2.6213 2.9 0.628
+      name "ball(31)"
+      color 1 0.556863 0.823529
+      radius 0.04
+    }
+    Ball {
+      translation -2.6213 3 0.628
+      name "ball(30)"
+      color 0.0392157 1 0.839216
+      radius 0.04
+    }
+    Ball {
+      translation -2.6213 3.1 0.628
+      name "ball(29)"
+      color 1 1 0.498039
+      radius 0.04
+    }
+    Ball {
+      translation -2.6213 2.5 0.798
+      name "ball(28)"
+      color 0 0 0
+      radius 0.06
+    }
+    Ball {
+      translation -2.6213 2.7 0.798
+      name "ball(27)"
+      color 0.152941 1 0.505882
+      radius 0.06
+    }
+    Ball {
+      translation -2.6213 2.9 0.798
+      name "ball(26)"
+      color 0.152941 0.662745 1
+      radius 0.06
+    }
+    Ball {
+      translation -2.6213 3.1 0.798
+      name "ball(25)"
+      color 1 0.0588235 0.2
+      radius 0.06
+    }
+    Ball {
+      translation -2.6213 2.5 0.948
+      name "ball(24)"
+      color 0.333333 0.666667 0
+      radius 0.06
+    }
+    Ball {
+      translation -2.6213 2.7 0.948
+      name "ball(23)"
+      color 1 0 0.498039
+      radius 0.06
+    }
+    Ball {
+      translation -2.6213 2.9 0.948
+      name "ball(22)"
+      color 0 0.333333 0.498039
+      radius 0.06
+    }
+    Ball {
+      translation -2.6213 3.1 0.948
+      name "ball(21)"
+      color 0.666667 0 0.498039
+      radius 0.06
+    }
+    Cabinet {
+      translation -1 2.77 0
+      rotation 0 0 -0.9999999999999999 1.5707953071795862
+      name "C14"
+      depth 0.45
+      innerThickness 0.01
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        2.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 1 0.9 1
+      }
+    }
+    CardboardBox {
+      translation -2.1 2.57 0.86
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(48)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation -1.6 2.57 0.86
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(48)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation -1.1 2.57 0.86
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(48)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation -0.6 2.57 0.86
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(48)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation -0.1 2.57 0.86
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(48)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation 0.3 2.57 0.86
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(48)"
+      size 0.05 0.15 0.1
+    }
+    Hammer {
+      translation -2.2 2.57 0.0425
+    }
+    Hammer {
+      translation -1.7 2.57 0.0425
+      name "hammer(1)"
+    }
+    Hammer {
+      translation -1.2 2.57 0.0425
+      name "hammer(2)"
+    }
+    Hammer {
+      translation -0.7 2.57 0.0425
+      name "hammer(3)"
+    }
+    Hammer {
+      translation -0.2 2.57 0.0425
+      name "hammer(4)"
+    }
+    Hammer {
+      translation 0.25 2.57 0.0425
+      name "hammer(5)"
+    }
+    Wrench {
+      translation 0.25 2.57 0.235
+    }
+    Wrench {
+      translation -0.1 2.57 0.235
+      name "wrench(1)"
+    }
+    Wrench {
+      translation -0.5 2.57 0.235
+      name "wrench(2)"
+    }
+    Wrench {
+      translation -0.9 2.57 0.235
+      name "wrench(3)"
+    }
+    Wrench {
+      translation -1.3 2.57 0.235
+      name "wrench(4)"
+    }
+    Wrench {
+      translation -1.7 2.57 0.235
+      name "wrench(5)"
+    }
+    Wrench {
+      translation -2.1 2.57 0.235
+      name "wrench(6)"
+    }
+    TJoint {
+      translation -2.1 2.57 0.51
+    }
+    TJoint {
+      translation -1.6 2.57 0.51
+      name "T joint pipe(1)"
+    }
+    TJoint {
+      translation -1.1 2.57 0.51
+      name "T joint pipe(2)"
+    }
+    TJoint {
+      translation -0.6 2.57 0.51
+      name "T joint pipe(3)"
+    }
+    TJoint {
+      translation -0.1 2.57 0.51
+      name "T joint pipe(4)"
+    }
+    Screwdriver {
+      translation -0.1 2.57 0.647
+    }
+    Screwdriver {
+      translation -0.6 2.57 0.647
+      name "screwdriver(2)"
+    }
+    Screwdriver {
+      translation -1.1 2.57 0.647
+      name "screwdriver(3)"
+    }
+    Screwdriver {
+      translation -1.6 2.57 0.647
+      name "screwdriver(4)"
+    }
+    Screwdriver {
+      translation -2.1 2.57 0.647
+      name "screwdriver(5)"
+    }
+    Screwdriver {
+      translation 0.3 2.57 0.647
+      name "screwdriver(1)"
+    }
+    Cabinet {
+      translation -1 2.77088 0
+      rotation 0 0 1 1.5708
+      name "C15"
+      depth 0.45
+      innerThickness 0.01
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        2.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.976471 0.941176 0.419608
+      }
+    }
+    HoneyJar {
+      translation -2.3 3.1 0.834
+      name "honey jar(22)"
+      color 0.0745098 0.113725 0
+    }
+    HoneyJar {
+      translation -2 3.1 0.834
+      name "honey jar(22)"
+      color 0.0745098 0.113725 0
+    }
+    HoneyJar {
+      translation -1.7 3.1 0.834
+      name "honey jar(22)"
+      color 0.0745098 0.113725 0
+    }
+    HoneyJar {
+      translation -1.4 3.1 0.834
+      name "honey jar(22)"
+      color 0.0745098 0.113725 0
+    }
+    HoneyJar {
+      translation -1.1 3.1 0.834
+      name "honey jar(22)"
+      color 0.0745098 0.113725 0
+    }
+    HoneyJar {
+      translation -0.5 3.1 0.834
+      name "honey jar(22)"
+      color 0.0745098 0.113725 0
+    }
+    HoneyJar {
+      translation -0.2 3.1 0.834
+      name "honey jar(22)"
+      color 0.0745098 0.113725 0
+    }
+    HoneyJar {
+      translation 0.1 3.1 0.834
+      name "honey jar(22)"
+      color 0.0745098 0.113725 0
+    }
+    HoneyJar {
+      translation -0.8 3.1 0.834
+      name "honey jar(22)"
+      color 0.0745098 0.113725 0
+    }
+    BiscuitBox {
+      translation -1.2 3.03 0.029
+      rotation 0 0 1 1.5708
+    }
+    BiscuitBox {
+      translation -1.7 3.03 0.029
+      rotation 0 0 1 1.5708
+      name "biscuit box(4)"
+    }
+    BiscuitBox {
+      translation -2.2 3.03 0.029
+      rotation 0 0 1 1.5708
+      name "biscuit box(5)"
+    }
+    BiscuitBox {
+      translation -2.2 3.03 0.636
+      rotation 0 0 1 1.5708
+      name "biscuit box(6)"
+    }
+    BiscuitBox {
+      translation -1.7 3.03 0.636
+      rotation 0 0 1 1.5708
+      name "biscuit box(7)"
+    }
+    BiscuitBox {
+      translation -1.2 3.03 0.636
+      rotation 0 0 1 1.5708
+      name "biscuit box(8)"
+    }
+    BiscuitBox {
+      translation -0.7 3.03 0.636
+      rotation 0 0 1 1.5708
+      name "biscuit box(9)"
+    }
+    BiscuitBox {
+      translation -0.2 3.03 0.636
+      rotation 0 0 1 1.5708
+      name "biscuit box(10)"
+    }
+    BiscuitBox {
+      translation 0.2 3.03 0.636
+      rotation 0 0 1 1.5708
+      name "biscuit box(11)"
+    }
+    BiscuitBox {
+      translation 0.2 3.03 0.029
+      rotation 0 0 1 1.5708
+      name "biscuit box(1)"
+    }
+    BiscuitBox {
+      translation -0.3 3.03 0.029
+      rotation 0 0 1 1.5708
+      name "biscuit box(2)"
+    }
+    BiscuitBox {
+      translation -0.7 3.03 0.029
+      rotation 0 0 1 1.5708
+      name "biscuit box(3)"
+    }
+    Can {
+      translation 0.2 3.03 0.296
+      name "can(28)"
+    }
+    Can {
+      translation -0.1 3.03 0.296
+      name "can(29)"
+    }
+    Can {
+      translation -0.4 3.03 0.296
+      name "can(30)"
+    }
+    Can {
+      translation -0.7 3.03 0.296
+      name "can(31)"
+    }
+    Can {
+      translation -1 3.03 0.296
+      name "can(32)"
+    }
+    Can {
+      translation -1.3 3.03 0.296
+      name "can(33)"
+    }
+    Can {
+      translation -1.6 3.03 0.296
+      name "can(34)"
+    }
+    Can {
+      translation -1.9 3.03 0.296
+      name "can(35)"
+    }
+    Can {
+      translation -2.2 3.03 0.296
+      name "can(36)"
+    }
+    Cabinet {
+      translation 0.45 2.77 0
+      rotation 0 0 -1 5.307156870259904e-06
+      name "C16"
+      depth 0.3
+      innerThickness 0
+      outerThickness 0
+      rowsHeights [
+        0.4, 0.15, 0.15, 0.15, 0.15
+      ]
+      columnsWidths [
+        0.44, 0.2, 0.2
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+    HoneyJar {
+      translation 0.64 3 0.74
+      name "honey jar(22)"
+      color 0.462745 0.27451 0.839216
+    }
+    HoneyJar {
+      translation 0.64 2.8 0.74
+      name "honey jar(22)"
+      color 0.462745 0.27451 0.839216
+    }
+    HoneyJar {
+      translation 0.64 2.63 0.74
+      name "honey jar(22)"
+      color 0.462745 0.27451 0.839216
+    }
+    HoneyJar {
+      translation 0.64 2.48 0.74
+      name "honey jar(22)"
+      color 0.462745 0.27451 0.839216
+    }
+    HoneyJar {
+      translation 0.64 3 0.889
+      name "honey jar(22)"
+      color 1 0.964706 0.45098
+    }
+    HoneyJar {
+      translation 0.64 2.8 0.889
+      name "honey jar(22)"
+      color 1 0.964706 0.45098
+    }
+    HoneyJar {
+      translation 0.64 2.63 0.889
+      name "honey jar(22)"
+      color 1 0.964706 0.45098
+    }
+    HoneyJar {
+      translation 0.64 2.48 0.889
+      name "honey jar(22)"
+      color 1 0.964706 0.45098
+    }
+    Ball {
+      translation 0.64 3.11 0.63
+      name "ball(5)"
+      color 1 0.835294 0
+      radius 0.04
+    }
+    Ball {
+      translation 0.64 2.89 0.63
+      name "ball(5)"
+      color 1 0.835294 0
+      radius 0.04
+    }
+    Ball {
+      translation 0.64 2.64 0.63
+      name "ball(5)"
+      color 1 0 0.0156863
+      radius 0.04
+    }
+    Ball {
+      translation 0.64 2.48 0.63
+      name "ball(5)"
+      color 1 0 0.0156863
+      radius 0.04
+    }
+    Orange {
+      translation 0.66 3.12 0.49
+      name "orange(32)"
+    }
+    Orange {
+      translation 0.66 2.96 0.49
+      name "orange(32)"
+    }
+    Apple {
+      translation 0.66 2.79 0.49
+      name "apple(33)"
+    }
+    Apple {
+      translation 0.66 2.64 0.49
+      name "apple(33)"
+    }
+    Apple {
+      translation 0.66 2.48 0.49
+      name "apple(33)"
+    }
+    WaterBottle {
+      translation 0.6 3.11 0.03
+      name "water bottle(7)"
+    }
+    WaterBottle {
+      translation 0.6 2.89 0.03
+      name "water bottle(6)"
+    }
+    WaterBottle {
+      translation 0.6 2.68 0.03
+      name "water bottle(5)"
+    }
+    WaterBottle {
+      translation 0.6 2.48 0.03
+      name "water bottle(4)"
+    }
+  ]
+}
+DEF C_GROUP5 Pose {
+  translation -0.71 -2.4983 0
+  rotation 0 1 0 0
+  children [
+    Cabinet {
+      translation -2.45 2.77 0
+      rotation 0 0 1 3.14159
+      name "C17"
+      depth 0.3
+      innerThickness 0
+      outerThickness 0
+      rowsHeights [
+        0.4, 0.15, 0.15, 0.15, 0.15
+      ]
+      columnsWidths [
+        0.44, 0.2, 0.2
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+    Rabbit {
+      translation -2.62 3.11 0.59
+      rotation 0 0 1 3.14159
+      scale 0.4
+    }
+    Rabbit {
+      translation -2.62 3.02 0.59
+      rotation 0 0 1 3.14159
+      scale 0.4
+      name "rabbit(1)"
+    }
+    Rabbit {
+      translation -2.62 2.93 0.59
+      rotation 0 0 1 3.14159
+      scale 0.4
+      name "rabbit(2)"
+    }
+    Rabbit {
+      translation -2.62 2.84 0.59
+      rotation 0 0 1 3.14159
+      scale 0.4
+      name "rabbit(3)"
+    }
+    Cow {
+      translation -2.6213 2.5 0.44
+      rotation 0 0 1 3.14159
+      scale 0.07
+    }
+    Deer {
+      translation -2.6213 2.8 0.44
+      rotation 0 0 1 3.14159
+      scale 0.08
+    }
+    Deer {
+      translation -2.6213 2.7 0.44
+      rotation 0 0 1 3.14159
+      scale 0.08
+      name "deer(1)"
+    }
+    Deer {
+      translation -2.6213 2.6 0.44
+      rotation 0 0 1 3.14159
+      scale 0.08
+      name "deer(2)"
+    }
+    Horse {
+      translation -2.6213 3.04 0.44
+      rotation 0 0 1 3.14159
+      scale 0.06
+    }
+    Horse {
+      translation -2.6213 2.97 0.44
+      rotation 0 0 1 3.14159
+      scale 0.06
+      name "horse(1)"
+    }
+    Horse {
+      translation -2.6213 2.9 0.44
+      rotation 0 0 1 3.14159
+      scale 0.06
+      name "horse(2)"
+    }
+    Fox {
+      translation -2.67 2.5 0.03
+      rotation 0 0 1 3.14159
+      scale 0.5
+    }
+    Dog {
+      translation -2.65 2.8 0.03
+      rotation 0 0 1 3.14159
+      scale 0.3
+    }
+    Dog {
+      translation -2.65 3.028 0.889
+      rotation 0 0 1 3.14159
+      scale 0.15
+      name "dog(1)"
+    }
+    Dog {
+      translation -2.65 2.91 0.889
+      rotation 0 0 1 3.14159
+      scale 0.15
+      name "dog(2)"
+    }
+    Dog {
+      translation -2.65 2.8 0.889
+      rotation 0 0 1 3.14159
+      scale 0.15
+      name "dog(3)"
+    }
+    Dog {
+      translation -2.65 2.7 0.889
+      rotation 0 0 1 3.14159
+      scale 0.15
+      name "dog(4)"
+    }
+    Dog {
+      translation -2.65 2.6 0.889
+      rotation 0 0 1 3.14159
+      scale 0.15
+      name "dog(5)"
+    }
+    Dog {
+      translation -2.65 2.5 0.889
+      rotation 0 0 1 3.14159
+      scale 0.15
+      name "dog(6)"
+    }
+    RubberDuck {
+      translation -2.62 2.45 0.609
+      rotation 0 0 1 3.14159
+      name "rubber duck(5)"
+    }
+    RubberDuck {
+      translation -2.62 2.65 0.609
+      rotation 0 0 1 3.14159
+      name "rubber duck(4)"
+    }
+    Cat {
+      translation -2.67 3.028 0.02
+      rotation 0 0 1 3.14159
+      scale 0.5
+    }
+    Cat {
+      translation -2.65 3.028 0.74
+      rotation 0 0 1 3.14159
+      scale 0.3
+      name "cat(1)"
+    }
+    Cat {
+      translation -2.65 2.91 0.74
+      rotation 0 0 1 3.14159
+      scale 0.3
+      name "cat(2)"
+    }
+    Cat {
+      translation -2.65 2.8 0.74
+      rotation 0 0 1 3.14159
+      scale 0.3
+      name "cat(3)"
+    }
+    Cat {
+      translation -2.65 2.7 0.74
+      rotation 0 0 1 3.14159
+      scale 0.3
+      name "cat(4)"
+    }
+    Cat {
+      translation -2.65 2.6 0.74
+      rotation 0 0 1 3.14159
+      scale 0.3
+      name "cat(5)"
+    }
+    Cat {
+      translation -2.65 2.5 0.74
+      rotation 0 0 1 3.14159
+      scale 0.3
+      name "cat(6)"
+    }
+    Cabinet {
+      translation -1 2.77 0
+      rotation 0 0 -0.9999999999999999 1.5707953071795862
+      name "C18"
+      depth 0.45
+      innerThickness 0.01
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        2.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.862745 0.541176 0.866667
+      }
+    }
+    Cookware {
+      translation 0.1 2.5 0.03
+    }
+    Cookware {
+      translation -0.3 2.5 0.03
+      name "cookware(1)"
+    }
+    Cookware {
+      translation -0.7 2.5 0.03
+      name "cookware(2)"
+    }
+    Cookware {
+      translation -1.1 2.5 0.03
+      name "cookware(3)"
+    }
+    Cookware {
+      translation -1.5 2.5 0.03
+      name "cookware(4)"
+    }
+    Cookware {
+      translation -1.9 2.5 0.03
+      name "cookware(5)"
+    }
+    Carafe {
+      translation -1.9 2.5 0.24
+    }
+    Carafe {
+      translation -1.6 2.5 0.24
+      name "carafe(1)"
+    }
+    Carafe {
+      translation -1.3 2.5 0.24
+      name "carafe(2)"
+    }
+    Carafe {
+      translation -1 2.5 0.24
+      name "carafe(3)"
+    }
+    Carafe {
+      translation -0.7 2.5 0.24
+      name "carafe(4)"
+    }
+    Carafe {
+      translation -0.4 2.5 0.24
+      name "carafe(5)"
+    }
+    Carafe {
+      translation -0.1 2.5 0.24
+      name "carafe(6)"
+    }
+    Carafe {
+      translation 0.2 2.5 0.24
+      name "carafe(7)"
+    }
+    Glass {
+      translation -0.1 2.5 0.435
+    }
+    Glass {
+      translation -0.3 2.5 0.435
+      name "glass(1)"
+    }
+    Glass {
+      translation -0.6 2.5 0.435
+      name "glass(2)"
+    }
+    Glass {
+      translation -0.9 2.5 0.435
+      name "glass(3)"
+    }
+    Glass {
+      translation -1.2 2.5 0.435
+      name "glass(4)"
+    }
+    Glass {
+      translation -1.5 2.5 0.435
+      name "glass(5)"
+    }
+    Glass {
+      translation -1.8 2.5 0.435
+      name "glass(6)"
+    }
+    Glass {
+      translation -2.1 2.5 0.435
+      name "glass(7)"
+    }
+    Plate {
+      translation -2.1 2.5 0.635
+    }
+    Plate {
+      translation -1.7 2.5 0.635
+      name "plate(1)"
+    }
+    Plate {
+      translation -1.4 2.5 0.635
+      name "plate(2)"
+    }
+    Plate {
+      translation -1 2.5 0.635
+      name "plate(3)"
+    }
+    Plate {
+      translation -0.7 2.5 0.635
+      name "plate(4)"
+    }
+    Plate {
+      translation -0.3 2.5 0.635
+      name "plate(5)"
+    }
+    Plate {
+      translation 0.1 2.5 0.635
+      name "plate(6)"
+    }
+    Wineglass {
+      translation 0.1 2.5 0.835
+    }
+    Wineglass {
+      translation -0.3 2.5 0.835
+      name "wine glass(1)"
+    }
+    Wineglass {
+      translation -0.7 2.5 0.835
+      name "wine glass(2)"
+    }
+    Wineglass {
+      translation -1.1 2.5 0.835
+      name "wine glass(3)"
+    }
+    Wineglass {
+      translation -1.5 2.5 0.835
+      name "wine glass(4)"
+    }
+    Wineglass {
+      translation -1.9 2.5 0.835
+      name "wine glass(5)"
+    }
+    Wineglass {
+      translation -2.3 2.5 0.835
+      name "wine glass(6)"
+    }
+    Cabinet {
+      translation -1 2.77088 0
+      rotation 0 0 1 1.5708
+      name "C19"
+      depth 0.45
+      innerThickness 0.01
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        2.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 1 0.607843 0.85098
+      }
+    }
+    JamJar {
+      translation -0.2 3.05 0.834
+      name "jam jar(16)"
+    }
+    JamJar {
+      translation -0.5 3.05 0.834
+      name "jam jar(18)"
+    }
+    JamJar {
+      translation -0.8 3.05 0.834
+      name "jam jar(19)"
+    }
+    JamJar {
+      translation -1.1 3.05 0.834
+      name "jam jar(20)"
+    }
+    JamJar {
+      translation -1.4 3.05 0.834
+      name "jam jar(21)"
+    }
+    JamJar {
+      translation -1.7 3.05 0.834
+      name "jam jar(22)"
+    }
+    JamJar {
+      translation -2 3.05 0.834
+      name "jam jar(23)"
+    }
+    JamJar {
+      translation -2.3 3.05 0.834
+      name "jam jar(24)"
+    }
+    JamJar {
+      translation 0.1 3.05 0.834
+      name "jam jar(17)"
+    }
+    Orange {
+      translation -2.3 3.05 0.683
+      name "orange(32)"
+    }
+    Orange {
+      translation -2 3.05 0.683
+      name "orange(32)"
+    }
+    Orange {
+      translation -1.7 3.05 0.683
+      name "orange(32)"
+    }
+    Orange {
+      translation -1.4 3.05 0.683
+      name "orange(32)"
+    }
+    Orange {
+      translation -1.1 3.05 0.683
+      name "orange(32)"
+    }
+    Orange {
+      translation -0.8 3.05 0.683
+      name "orange(32)"
+    }
+    Orange {
+      translation -0.5 3.05 0.683
+      name "orange(32)"
+    }
+    Orange {
+      translation -0.1 3.05 0.683
+      name "orange(32)"
+    }
+    Orange {
+      translation 0.2 3.05 0.683
+      name "orange(32)"
+    }
+    Apple {
+      translation 0.2 3.05 0.485
+      name "apple(33)"
+    }
+    Apple {
+      translation -0.1 3.05 0.485
+      name "apple(33)"
+    }
+    Apple {
+      translation -0.4 3.05 0.485
+      name "apple(33)"
+    }
+    Apple {
+      translation -0.7 3.05 0.485
+      name "apple(33)"
+    }
+    Apple {
+      translation -1 3.05 0.485
+      name "apple(33)"
+    }
+    Apple {
+      translation -1.3 3.05 0.485
+      name "apple(33)"
+    }
+    Apple {
+      translation -1.6 3.05 0.485
+      name "apple(33)"
+    }
+    Apple {
+      translation -1.9 3.05 0.485
+      name "apple(33)"
+    }
+    HoneyJar {
+      translation 0.2 3.05 0.234
+      name "honey jar(22)"
+    }
+    HoneyJar {
+      translation -0.1 3.05 0.234
+      name "honey jar(22)"
+    }
+    HoneyJar {
+      translation -0.4 3.05 0.234
+      name "honey jar(22)"
+    }
+    HoneyJar {
+      translation -0.7 3.05 0.234
+      name "honey jar(22)"
+    }
+    HoneyJar {
+      translation -1 3.05 0.234
+      name "honey jar(22)"
+    }
+    HoneyJar {
+      translation -1.3 3.05 0.234
+      name "honey jar(22)"
+    }
+    HoneyJar {
+      translation -1.6 3.05 0.234
+      name "honey jar(22)"
+    }
+    HoneyJar {
+      translation -1.9 3.05 0.234
+      name "honey jar(22)"
+    }
+    HoneyJar {
+      translation -2.2 3.05 0.234
+      name "honey jar(22)"
+    }
+    Ball {
+      translation 0.1 3.05 0.12
+      name "ball(5)"
+      color 0.513726 0.427451 0.172549
+      radius 0.09
+    }
+    Ball {
+      translation -0.3 3.05 0.12
+      name "ball(5)"
+      color 0.501961 1 0.92549
+      radius 0.09
+    }
+    Ball {
+      translation -0.7 3.05 0.12
+      name "ball(5)"
+      color 0.423529 0.0862745 0.109804
+      radius 0.09
+    }
+    Ball {
+      translation -1.1 3.05 0.12
+      name "ball(5)"
+      color 0.423529 0.101961 0.380392
+      radius 0.09
+    }
+    Ball {
+      translation -1.5 3.05 0.12
+      name "ball(5)"
+      color 0.415686 0.666667 0.32549
+      radius 0.09
+    }
+    Ball {
+      translation -1.9 3.05 0.12
+      name "ball(5)"
+      color 1 0.333333 0
+      radius 0.09
+    }
+    Ball {
+      translation -2.3 3.05 0.12
+      name "ball(5)"
+      color 0 0.333333 0
+      radius 0.09
+    }
+    Cabinet {
+      translation 0.45 2.77 0
+      rotation 0 0 -1 5.307156870259904e-06
+      name "C20"
+      depth 0.3
+      innerThickness 0
+      outerThickness 0
+      rowsHeights [
+        0.4, 0.15, 0.15, 0.15, 0.15
+      ]
+      columnsWidths [
+        0.44, 0.2, 0.2
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+    HoneyJar {
+      translation 0.64 2.48 0.74
+      name "honey jar(22)"
+      color 0.462745 0.27451 0.839216
+    }
+    HoneyJar {
+      translation 0.64 2.63 0.74
+      name "honey jar(22)"
+      color 0.462745 0.27451 0.839216
+    }
+    HoneyJar {
+      translation 0.64 2.63 0.889
+      name "honey jar(22)"
+      color 1 0.964706 0.45098
+    }
+    HoneyJar {
+      translation 0.64 2.48 0.889
+      name "honey jar(22)"
+      color 1 0.964706 0.45098
+    }
+    HoneyJar {
+      translation 0.64 2.8 0.74
+      name "honey jar(22)"
+      color 0.462745 0.27451 0.839216
+    }
+    HoneyJar {
+      translation 0.64 2.8 0.889
+      name "honey jar(22)"
+      color 1 0.964706 0.45098
+    }
+    HoneyJar {
+      translation 0.64 3 0.74
+      name "honey jar(22)"
+      color 0.462745 0.27451 0.839216
+    }
+    HoneyJar {
+      translation 0.64 3 0.889
+      name "honey jar(22)"
+      color 1 0.964706 0.45098
+    }
+    Ball {
+      translation 0.64 2.48 0.63
+      name "ball(5)"
+      color 1 0 0.0156863
+      radius 0.04
+    }
+    Ball {
+      translation 0.64 2.64 0.63
+      name "ball(5)"
+      color 1 0 0.0156863
+      radius 0.04
+    }
+    Ball {
+      translation 0.64 2.89 0.63
+      name "ball(5)"
+      color 1 0.835294 0
+      radius 0.04
+    }
+    Ball {
+      translation 0.64 3.11 0.63
+      name "ball(5)"
+      color 1 0.835294 0
+      radius 0.04
+    }
+    Apple {
+      translation 0.66 2.48 0.49
+      name "apple(10)"
+    }
+    Apple {
+      translation 0.66 2.64 0.49
+      name "apple(33)"
+    }
+    Apple {
+      translation 0.66 2.79 0.49
+      name "apple(17)"
+    }
+    Orange {
+      translation 0.66 2.96 0.49
+      name "orange(26)"
+    }
+    Orange {
+      translation 0.66 3.12 0.49
+      name "orange(32)"
+    }
+    WaterBottle {
+      translation 0.6 2.68 0.03
+      name "water bottle(1)"
+    }
+    WaterBottle {
+      translation 0.6 2.89 0.03
+      name "water bottle(2)"
+    }
+    WaterBottle {
+      translation 0.6 3.11 0.03
+      name "water bottle(3)"
+    }
+    WaterBottle {
+      translation 0.6 2.48 0.03
+    }
+  ]
+}
+DEF C_GROUP6 Pose {
+  translation -0.71 -4.7233 0
+  rotation 0 1 0 0
+  children [
+    Cabinet {
+      translation -2.45 2.77 0
+      rotation 0 0 1 3.14159
+      name "C21"
+      depth 0.3
+      innerThickness 0
+      outerThickness 0
+      rowsHeights [
+        0.4, 0.15, 0.15, 0.15, 0.15
+      ]
+      columnsWidths [
+        0.44, 0.2, 0.2
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+    Cabinet {
+      translation -1 2.77 0
+      rotation 0 0 -0.9999999999999999 1.5707953071795862
+      name "C22"
+      depth 0.45
+      innerThickness 0.01
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        2.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 1 1 0.8
+      }
+    }
+    Cabinet {
+      translation -1 2.77088 0
+      rotation 0 0 1 1.5708
+      name "C23"
+      depth 0.45
+      innerThickness 0.01
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        2.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.976471 0.941176 0.419608
+      }
+    }
+    Cabinet {
+      translation 0.45 2.77 0
+      rotation 0 0 -1 5.307156870259904e-06
+      name "C24"
+      depth 0.3
+      innerThickness 0
+      outerThickness 0
+      rowsHeights [
+        0.4, 0.15, 0.15, 0.15, 0.15
+      ]
+      columnsWidths [
+        0.44, 0.2, 0.2
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+  ]
+}
+DEF WC_GROUP1 Pose {
+  translation 0.1 0.2 0
+  children [
+    CardboardBox {
+      translation -2.2 4.29 0.76
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(6)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation -2.4 4.29 0.76
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(7)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation -2 4.29 0.76
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(8)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation -1.8 4.29 0.76
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(9)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation -1.6 4.29 0.76
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(10)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation -1.4 4.29 0.76
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(11)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation 0.2 4.29 0.76
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(54)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation 0.4 4.29 0.76
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(55)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation 0.6 4.29 0.76
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(56)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation 0.8 4.29 0.76
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(57)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation 1 4.29 0.76
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(58)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation 1.2 4.29 0.76
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(59)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation 2.8 4.29 0.76
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(66)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation 3 4.29 0.76
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(67)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation 3.2 4.29 0.76
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(68)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation 3.4 4.29 0.76
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(69)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation 3.6 4.29 0.76
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(70)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation 3.8 4.29 0.76
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(71)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation 5.4 4.29 0.76
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(78)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation 5.6 4.29 0.76
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(79)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation 5.8 4.29 0.76
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(80)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation 6 4.29 0.76
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(81)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation 6.2 4.29 0.76
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(82)"
+      size 0.05 0.15 0.1
+    }
+    CardboardBox {
+      translation 6.4 4.29 0.76
+      rotation 0.5773489358550934 0.5773519358547601 -0.5773499358549823 2.0944
+      name "cardboard box(83)"
+      size 0.05 0.15 0.1
+    }
+    PhotoFrame {
+      translation -2.4 4.29 0.93
+      rotation 0 0 1 -1.5707953071795862
+    }
+    PhotoFrame {
+      translation -2.4 4.29 0.53
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(6)"
+    }
+    PhotoFrame {
+      translation -2.2 4.29 0.53
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(7)"
+    }
+    PhotoFrame {
+      translation -2 4.29 0.53
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(8)"
+    }
+    PhotoFrame {
+      translation -1.8 4.29 0.53
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(9)"
+    }
+    PhotoFrame {
+      translation 0.3 4.29 0.53
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(13)"
+    }
+    PhotoFrame {
+      translation 0.5 4.29 0.53
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(14)"
+    }
+    PhotoFrame {
+      translation 0.7 4.29 0.53
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(15)"
+    }
+    PhotoFrame {
+      translation 2.9 4.29 0.53
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(19)"
+    }
+    PhotoFrame {
+      translation 3.1 4.29 0.53
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(20)"
+    }
+    PhotoFrame {
+      translation 3.3 4.29 0.53
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(21)"
+    }
+    PhotoFrame {
+      translation 5.5 4.29 0.53
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(25)"
+    }
+    PhotoFrame {
+      translation 5.7 4.29 0.53
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(26)"
+    }
+    PhotoFrame {
+      translation 5.9 4.29 0.53
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(27)"
+    }
+    PhotoFrame {
+      translation -2.1 4.29 0.93
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(2)"
+    }
+    PhotoFrame {
+      translation -1.8 4.29 0.93
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(4)"
+    }
+    PhotoFrame {
+      translation -1.5 4.29 0.93
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(5)"
+    }
+    PhotoFrame {
+      translation 0.2 4.29 0.93
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(1)"
+    }
+    PhotoFrame {
+      translation 0.5 4.29 0.93
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(3)"
+    }
+    PhotoFrame {
+      translation 0.8 4.29 0.93
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(32)"
+    }
+    PhotoFrame {
+      translation 1.1 4.29 0.93
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(33)"
+    }
+    PhotoFrame {
+      translation 2.9 4.29 0.93
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(38)"
+    }
+    PhotoFrame {
+      translation 3.2 4.29 0.93
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(39)"
+    }
+    PhotoFrame {
+      translation 3.5 4.29 0.93
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(40)"
+    }
+    PhotoFrame {
+      translation 3.8 4.29 0.93
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(41)"
+    }
+    PhotoFrame {
+      translation 5.5 4.29 0.93
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(46)"
+    }
+    PhotoFrame {
+      translation 5.8 4.29 0.93
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(47)"
+    }
+    PhotoFrame {
+      translation 6.1 4.29 0.93
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(48)"
+    }
+    PhotoFrame {
+      translation 6.4 4.29 0.93
+      rotation 0 0 1 -1.5707953071795862
+      name "photo frame(49)"
+    }
+    Cabinet {
+      translation -1.90512 4.41708 0
+      rotation 0 0 1 -1.5707953071795862
+      name "WC1"
+      depth 0.2
+      innerThickness 0.01
+      rowsHeights [
+        0.3, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        0.9, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+    Cabinet {
+      translation -3.11574 4.42331 6.21712e-15
+      rotation 0 0 1 -1.5707953071795862
+      name "WC2"
+      depth 0.2
+      innerThickness 0.01
+      rowsHeights [
+        0.3, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        0.7, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+    Cabinet {
+      translation -0.599494 4.41562 6.21712e-15
+      rotation 0 0 1 -1.5707953071795862
+      name "WC2(1)"
+      depth 0.2
+      innerThickness 0.01
+      rowsHeights [
+        0.3, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        0.9, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+    Cabinet {
+      translation -3.65678 3.44539 3.81915e-14
+      rotation 0 0 1 1.01503e-06
+      name "WC2(2)"
+      depth 0.2
+      innerThickness 0.01
+      rowsHeights [
+        0.3, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        1, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+    Cabinet {
+      translation 0.707506 4.41709 -1.48325e-13
+      rotation 0 0 1 -1.5707953071795862
+      name "WC3"
+      depth 0.2
+      innerThickness 0.01
+      rowsHeights [
+        0.3, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        0.9, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+    Cabinet {
+      translation 2.02334 4.40825 -4.44102e-15
+      rotation 0 0 1 -1.5707953071795862
+      name "WC4"
+      depth 0.2
+      innerThickness 0.01
+      rowsHeights [
+        0.3, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        0.9, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+    Cabinet {
+      translation 3.31151 4.39846 0
+      rotation 0 0 1 -1.5707953071795862
+      name "WC5"
+      depth 0.2
+      innerThickness 0.01
+      rowsHeights [
+        0.3, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        0.9, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+    Cabinet {
+      translation 4.59912 4.3952 0
+      rotation 0 0 1 -1.5707953071795862
+      name "WC6"
+      depth 0.2
+      innerThickness 0.01
+      rowsHeights [
+        0.3, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        0.9, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+    Cabinet {
+      translation 5.9 4.38532 -2.1494e-13
+      rotation 0 0 -0.9999999999999999 1.5707953071795862
+      name "WC7"
+      depth 0.2
+      innerThickness 0.01
+      rowsHeights [
+        0.3, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        0.9, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+  ]
+}
+DEF SHELF_GROUP1 Pose {
+  translation 6.3 -4.1783 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF1"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF2"
+    }
+    HoneyJar {
+      translation 0 -0.2 0.859422
+      name "honey jar(39)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.1 0.859422
+      name "honey jar(38)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0 0.859422
+      name "honey jar(37)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.1 0.859422
+      name "honey jar(36)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.2 0.859422
+      name "honey jar(35)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.2 0.689438
+      name "honey jar(34)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 -0.1 0.689438
+      name "honey jar(33)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0 0.689438
+      name "honey jar(32)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.1 0.689438
+      name "honey jar(31)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.2 0.689438
+      name "honey jar(21)"
+      color 0.72549 0.839216 0.458824
+    }
+    Orange {
+      translation 0 -0.2 0.569906
+      name "orange(40)"
+    }
+    Orange {
+      translation 0 -0.1 0.569906
+      name "orange(39)"
+    }
+    Orange {
+      translation 0 0 0.569906
+      name "orange(38)"
+    }
+    Orange {
+      translation 0 0.1 0.569906
+      name "orange(37)"
+    }
+    Orange {
+      translation 0 0.2 0.569906
+      name "orange(36)"
+    }
+    Orange {
+      translation 0 -0.2 0.409844
+      name "orange(35)"
+    }
+    Orange {
+      translation 0 -0.1 0.409844
+      name "orange(34)"
+    }
+    Orange {
+      translation 0 0 0.409844
+      name "orange(33)"
+    }
+    Orange {
+      translation 0 0.1 0.409844
+      name "orange(32)"
+    }
+    Orange {
+      translation 0 0.2 0.409844
+      name "orange(31)"
+    }
+  ]
+}
+DEF SHELF_GROUP2 Pose {
+  translation 5.7 -4.1783 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF3"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF4"
+    }
+  ]
+}
+DEF SHELF_GROUP3 Pose {
+  translation 5.1 -4.1783 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF5"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF6"
+    }
+    HoneyJar {
+      translation 0 -0.2 0.859422
+      name "honey jar(39)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.1 0.859422
+      name "honey jar(38)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0 0.859422
+      name "honey jar(37)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.1 0.859422
+      name "honey jar(36)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.2 0.859422
+      name "honey jar(35)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.2 0.689438
+      name "honey jar(34)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 -0.1 0.689438
+      name "honey jar(33)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0 0.689438
+      name "honey jar(32)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.1 0.689438
+      name "honey jar(31)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.2 0.689438
+      name "honey jar(21)"
+      color 0.72549 0.839216 0.458824
+    }
+    Orange {
+      translation 0 -0.2 0.569906
+      name "orange(40)"
+    }
+    Orange {
+      translation 0 -0.1 0.569906
+      name "orange(39)"
+    }
+    Orange {
+      translation 0 0 0.569906
+      name "orange(38)"
+    }
+    Orange {
+      translation 0 0.1 0.569906
+      name "orange(37)"
+    }
+    Orange {
+      translation 0 0.2 0.569906
+      name "orange(36)"
+    }
+    Orange {
+      translation 0 -0.2 0.409844
+      name "orange(35)"
+    }
+    Orange {
+      translation 0 -0.1 0.409844
+      name "orange(34)"
+    }
+    Orange {
+      translation 0 0 0.409844
+      name "orange(33)"
+    }
+    Orange {
+      translation 0 0.1 0.409844
+      name "orange(32)"
+    }
+    Orange {
+      translation 0 0.2 0.409844
+      name "orange(31)"
+    }
+  ]
+}
+DEF SHELF_GROUP4 Pose {
+  translation 4.5 -4.1783 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF7"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF8"
+    }
+  ]
+}
+DEF SHELF_GROUP5 Pose {
+  translation 3.9 -4.1783 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF9"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF10"
+    }
+    HoneyJar {
+      translation 0 -0.2 0.859422
+      name "honey jar(39)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.1 0.859422
+      name "honey jar(38)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0 0.859422
+      name "honey jar(37)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.1 0.859422
+      name "honey jar(36)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.2 0.859422
+      name "honey jar(35)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.2 0.689438
+      name "honey jar(34)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 -0.1 0.689438
+      name "honey jar(33)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0 0.689438
+      name "honey jar(32)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.1 0.689438
+      name "honey jar(31)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.2 0.689438
+      name "honey jar(21)"
+      color 0.72549 0.839216 0.458824
+    }
+    Orange {
+      translation 0 -0.2 0.569906
+      name "orange(40)"
+    }
+    Orange {
+      translation 0 -0.1 0.569906
+      name "orange(39)"
+    }
+    Orange {
+      translation 0 0 0.569906
+      name "orange(38)"
+    }
+    Orange {
+      translation 0 0.1 0.569906
+      name "orange(37)"
+    }
+    Orange {
+      translation 0 0.2 0.569906
+      name "orange(36)"
+    }
+    Orange {
+      translation 0 -0.2 0.409844
+      name "orange(35)"
+    }
+    Orange {
+      translation 0 -0.1 0.409844
+      name "orange(34)"
+    }
+    Orange {
+      translation 0 0 0.409844
+      name "orange(33)"
+    }
+    Orange {
+      translation 0 0.1 0.409844
+      name "orange(32)"
+    }
+    Orange {
+      translation 0 0.2 0.409844
+      name "orange(31)"
+    }
+  ]
+}
+DEF SHELF_GROUP6 Pose {
+  translation 3.3 -4.1783 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF11"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF12"
+    }
+  ]
+}
+DEF SHELF_GROUP7 Pose {
+  translation 2.7 -4.1783 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF13"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF14"
+    }
+    HoneyJar {
+      translation 0 -0.2 0.859422
+      name "honey jar(39)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.1 0.859422
+      name "honey jar(38)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0 0.859422
+      name "honey jar(37)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.1 0.859422
+      name "honey jar(36)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.2 0.859422
+      name "honey jar(35)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.2 0.689438
+      name "honey jar(34)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 -0.1 0.689438
+      name "honey jar(33)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0 0.689438
+      name "honey jar(32)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.1 0.689438
+      name "honey jar(31)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.2 0.689438
+      name "honey jar(21)"
+      color 0.72549 0.839216 0.458824
+    }
+    Orange {
+      translation 0 -0.2 0.569906
+      name "orange(40)"
+    }
+    Orange {
+      translation 0 -0.1 0.569906
+      name "orange(39)"
+    }
+    Orange {
+      translation 0 0 0.569906
+      name "orange(38)"
+    }
+    Orange {
+      translation 0 0.1 0.569906
+      name "orange(37)"
+    }
+    Orange {
+      translation 0 0.2 0.569906
+      name "orange(36)"
+    }
+    Orange {
+      translation 0 -0.2 0.409844
+      name "orange(35)"
+    }
+    Orange {
+      translation 0 -0.1 0.409844
+      name "orange(34)"
+    }
+    Orange {
+      translation 0 0 0.409844
+      name "orange(33)"
+    }
+    Orange {
+      translation 0 0.1 0.409844
+      name "orange(32)"
+    }
+    Orange {
+      translation 0 0.2 0.409844
+      name "orange(31)"
+    }
+  ]
+}
+DEF SHELF_GROUP8 Pose {
+  translation 2.1 -4.1783 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF15"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF16"
+    }
+  ]
+}
+DEF SHELF_GROUP9 Pose {
+  translation 1.5 -4.1783 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF17"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF18"
+    }
+    HoneyJar {
+      translation 0 -0.2 0.859422
+      name "honey jar(39)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.1 0.859422
+      name "honey jar(38)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0 0.859422
+      name "honey jar(37)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.1 0.859422
+      name "honey jar(36)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.2 0.859422
+      name "honey jar(35)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.2 0.689438
+      name "honey jar(34)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 -0.1 0.689438
+      name "honey jar(33)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0 0.689438
+      name "honey jar(32)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.1 0.689438
+      name "honey jar(31)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.2 0.689438
+      name "honey jar(21)"
+      color 0.72549 0.839216 0.458824
+    }
+    Orange {
+      translation 0 -0.2 0.569906
+      name "orange(40)"
+    }
+    Orange {
+      translation 0 -0.1 0.569906
+      name "orange(39)"
+    }
+    Orange {
+      translation 0 0 0.569906
+      name "orange(38)"
+    }
+    Orange {
+      translation 0 0.1 0.569906
+      name "orange(37)"
+    }
+    Orange {
+      translation 0 0.2 0.569906
+      name "orange(36)"
+    }
+    Orange {
+      translation 0 -0.2 0.409844
+      name "orange(35)"
+    }
+    Orange {
+      translation 0 -0.1 0.409844
+      name "orange(34)"
+    }
+    Orange {
+      translation 0 0 0.409844
+      name "orange(33)"
+    }
+    Orange {
+      translation 0 0.1 0.409844
+      name "orange(32)"
+    }
+    Orange {
+      translation 0 0.2 0.409844
+      name "orange(31)"
+    }
+  ]
+}
+DEF SHELF_GROUP10 Pose {
+  translation 0.9 -4.1783 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF19"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF20"
+    }
+  ]
+}
+DEF SHELF_GROUP11 Pose {
+  translation 0.3 -4.1783 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF21"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF22"
+    }
+    HoneyJar {
+      translation 0 -0.2 0.859422
+      name "honey jar(39)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.1 0.859422
+      name "honey jar(38)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0 0.859422
+      name "honey jar(37)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.1 0.859422
+      name "honey jar(36)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.2 0.859422
+      name "honey jar(35)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.2 0.689438
+      name "honey jar(34)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 -0.1 0.689438
+      name "honey jar(33)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0 0.689438
+      name "honey jar(32)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.1 0.689438
+      name "honey jar(31)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.2 0.689438
+      name "honey jar(21)"
+      color 0.72549 0.839216 0.458824
+    }
+    Orange {
+      translation 0 -0.2 0.569906
+      name "orange(40)"
+    }
+    Orange {
+      translation 0 -0.1 0.569906
+      name "orange(39)"
+    }
+    Orange {
+      translation 0 0 0.569906
+      name "orange(38)"
+    }
+    Orange {
+      translation 0 0.1 0.569906
+      name "orange(37)"
+    }
+    Orange {
+      translation 0 0.2 0.569906
+      name "orange(36)"
+    }
+    Orange {
+      translation 0 -0.2 0.409844
+      name "orange(35)"
+    }
+    Orange {
+      translation 0 -0.1 0.409844
+      name "orange(34)"
+    }
+    Orange {
+      translation 0 0 0.409844
+      name "orange(33)"
+    }
+    Orange {
+      translation 0 0.1 0.409844
+      name "orange(32)"
+    }
+    Orange {
+      translation 0 0.2 0.409844
+      name "orange(31)"
+    }
+  ]
+}
+DEF SHELF_GROUP12 Pose {
+  translation -0.3 -4.1783 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF23"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF24"
+    }
+  ]
+}
+DEF SHELF_GROUP13 Pose {
+  translation -0.9 -4.1783 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF25"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF26"
+    }
+    HoneyJar {
+      translation 0 -0.2 0.859422
+      name "honey jar(39)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.1 0.859422
+      name "honey jar(38)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0 0.859422
+      name "honey jar(37)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.1 0.859422
+      name "honey jar(36)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.2 0.859422
+      name "honey jar(35)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.2 0.689438
+      name "honey jar(34)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 -0.1 0.689438
+      name "honey jar(33)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0 0.689438
+      name "honey jar(32)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.1 0.689438
+      name "honey jar(31)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.2 0.689438
+      name "honey jar(21)"
+      color 0.72549 0.839216 0.458824
+    }
+    Orange {
+      translation 0 -0.2 0.569906
+      name "orange(40)"
+    }
+    Orange {
+      translation 0 -0.1 0.569906
+      name "orange(39)"
+    }
+    Orange {
+      translation 0 0 0.569906
+      name "orange(38)"
+    }
+    Orange {
+      translation 0 0.1 0.569906
+      name "orange(37)"
+    }
+    Orange {
+      translation 0 0.2 0.569906
+      name "orange(36)"
+    }
+    Orange {
+      translation 0 -0.2 0.409844
+      name "orange(35)"
+    }
+    Orange {
+      translation 0 -0.1 0.409844
+      name "orange(34)"
+    }
+    Orange {
+      translation 0 0 0.409844
+      name "orange(33)"
+    }
+    Orange {
+      translation 0 0.1 0.409844
+      name "orange(32)"
+    }
+    Orange {
+      translation 0 0.2 0.409844
+      name "orange(31)"
+    }
+  ]
+}
+DEF SHELF_GROUP14 Pose {
+  translation -1.5 -4.1783 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF27"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF28"
+    }
+  ]
+}
+DEF SHELF_GROUP15 Pose {
+  translation -2.1 -4.1783 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF29"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF30"
+    }
+    HoneyJar {
+      translation 0 -0.2 0.859422
+      name "honey jar(39)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.1 0.859422
+      name "honey jar(38)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0 0.859422
+      name "honey jar(37)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.1 0.859422
+      name "honey jar(36)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.2 0.859422
+      name "honey jar(35)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.2 0.689438
+      name "honey jar(34)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 -0.1 0.689438
+      name "honey jar(33)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0 0.689438
+      name "honey jar(32)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.1 0.689438
+      name "honey jar(31)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.2 0.689438
+      name "honey jar(21)"
+      color 0.72549 0.839216 0.458824
+    }
+    Orange {
+      translation 0 -0.2 0.569906
+      name "orange(40)"
+    }
+    Orange {
+      translation 0 -0.1 0.569906
+      name "orange(39)"
+    }
+    Orange {
+      translation 0 0 0.569906
+      name "orange(38)"
+    }
+    Orange {
+      translation 0 0.1 0.569906
+      name "orange(37)"
+    }
+    Orange {
+      translation 0 0.2 0.569906
+      name "orange(36)"
+    }
+    Orange {
+      translation 0 -0.2 0.409844
+      name "orange(35)"
+    }
+    Orange {
+      translation 0 -0.1 0.409844
+      name "orange(34)"
+    }
+    Orange {
+      translation 0 0 0.409844
+      name "orange(33)"
+    }
+    Orange {
+      translation 0 0.1 0.409844
+      name "orange(32)"
+    }
+    Orange {
+      translation 0 0.2 0.409844
+      name "orange(31)"
+    }
+  ]
+}
+DEF SHELF_GROUP16 Pose {
+  translation -2.7 -4.1783 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF31"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF32"
+    }
+  ]
+}
+DEF SHELF_GROUP17 Pose {
+  translation -3.3 -4.1783 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF33"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF34"
+    }
+    HoneyJar {
+      translation 0 -0.2 0.859422
+      name "honey jar(39)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.1 0.859422
+      name "honey jar(38)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0 0.859422
+      name "honey jar(37)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.1 0.859422
+      name "honey jar(36)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.2 0.859422
+      name "honey jar(35)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.2 0.689438
+      name "honey jar(34)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 -0.1 0.689438
+      name "honey jar(33)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0 0.689438
+      name "honey jar(32)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.1 0.689438
+      name "honey jar(31)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.2 0.689438
+      name "honey jar(21)"
+      color 0.72549 0.839216 0.458824
+    }
+    Orange {
+      translation 0 -0.2 0.569906
+      name "orange(40)"
+    }
+    Orange {
+      translation 0 -0.1 0.569906
+      name "orange(39)"
+    }
+    Orange {
+      translation 0 0 0.569906
+      name "orange(38)"
+    }
+    Orange {
+      translation 0 0.1 0.569906
+      name "orange(37)"
+    }
+    Orange {
+      translation 0 0.2 0.569906
+      name "orange(36)"
+    }
+    Orange {
+      translation 0 -0.2 0.409844
+      name "orange(35)"
+    }
+    Orange {
+      translation 0 -0.1 0.409844
+      name "orange(34)"
+    }
+    Orange {
+      translation 0 0 0.409844
+      name "orange(33)"
+    }
+    Orange {
+      translation 0 0.1 0.409844
+      name "orange(32)"
+    }
+    Orange {
+      translation 0 0.2 0.409844
+      name "orange(31)"
+    }
+  ]
+}
+DEF SHELF_GROUP18 Pose {
+  translation -3.9 -4.1783 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF35"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF36"
+    }
+  ]
+}
+DEF SHELF_GROUP19 Pose {
+  translation -4.5 -4.1783 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF37"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF38"
+    }
+    HoneyJar {
+      translation 0 -0.2 0.859422
+      name "honey jar(39)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.1 0.859422
+      name "honey jar(38)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0 0.859422
+      name "honey jar(37)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.1 0.859422
+      name "honey jar(36)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.2 0.859422
+      name "honey jar(35)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.2 0.689438
+      name "honey jar(34)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 -0.1 0.689438
+      name "honey jar(33)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0 0.689438
+      name "honey jar(32)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.1 0.689438
+      name "honey jar(31)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.2 0.689438
+      name "honey jar(21)"
+      color 0.72549 0.839216 0.458824
+    }
+    Orange {
+      translation 0 -0.2 0.569906
+      name "orange(40)"
+    }
+    Orange {
+      translation 0 -0.1 0.569906
+      name "orange(39)"
+    }
+    Orange {
+      translation 0 0 0.569906
+      name "orange(38)"
+    }
+    Orange {
+      translation 0 0.1 0.569906
+      name "orange(37)"
+    }
+    Orange {
+      translation 0 0.2 0.569906
+      name "orange(36)"
+    }
+    Orange {
+      translation 0 -0.2 0.409844
+      name "orange(35)"
+    }
+    Orange {
+      translation 0 -0.1 0.409844
+      name "orange(34)"
+    }
+    Orange {
+      translation 0 0 0.409844
+      name "orange(33)"
+    }
+    Orange {
+      translation 0 0.1 0.409844
+      name "orange(32)"
+    }
+    Orange {
+      translation 0 0.2 0.409844
+      name "orange(31)"
+    }
+  ]
+}
+DEF SHELF_GROUP20 Pose {
+  translation -5.1 -4.1783 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF39"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF40"
+    }
+  ]
+}
+DEF SHELF_GROUP21 Pose {
+  translation -5.7 -4.1783 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF41"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF42"
+    }
+    HoneyJar {
+      translation 0 -0.2 0.859422
+      name "honey jar(39)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.1 0.859422
+      name "honey jar(38)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0 0.859422
+      name "honey jar(37)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.1 0.859422
+      name "honey jar(36)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.2 0.859422
+      name "honey jar(35)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.2 0.689438
+      name "honey jar(34)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 -0.1 0.689438
+      name "honey jar(33)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0 0.689438
+      name "honey jar(32)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.1 0.689438
+      name "honey jar(31)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.2 0.689438
+      name "honey jar(21)"
+      color 0.72549 0.839216 0.458824
+    }
+    Orange {
+      translation 0 -0.2 0.569906
+      name "orange(40)"
+    }
+    Orange {
+      translation 0 -0.1 0.569906
+      name "orange(39)"
+    }
+    Orange {
+      translation 0 0 0.569906
+      name "orange(38)"
+    }
+    Orange {
+      translation 0 0.1 0.569906
+      name "orange(37)"
+    }
+    Orange {
+      translation 0 0.2 0.569906
+      name "orange(36)"
+    }
+    Orange {
+      translation 0 -0.2 0.409844
+      name "orange(35)"
+    }
+    Orange {
+      translation 0 -0.1 0.409844
+      name "orange(34)"
+    }
+    Orange {
+      translation 0 0 0.409844
+      name "orange(33)"
+    }
+    Orange {
+      translation 0 0.1 0.409844
+      name "orange(32)"
+    }
+    Orange {
+      translation 0 0.2 0.409844
+      name "orange(31)"
+    }
+  ]
+}
+DEF SHELF_GROUP22 Pose {
+  translation 6.8 4 0
+  children [
+    HoneyJar {
+      translation 0 0.2 0.689438
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.2 0.859422
+      name "honey jar(5)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.1 0.859422
+      name "honey jar(6)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0 0.859422
+      name "honey jar(7)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.1 0.859422
+      name "honey jar(8)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.2 0.859422
+      name "honey jar(9)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.1 0.689438
+      name "honey jar(1)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0 0.689438
+      name "honey jar(2)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 -0.1 0.689438
+      name "honey jar(3)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 -0.2 0.689438
+      name "honey jar(4)"
+      color 0.72549 0.839216 0.458824
+    }
+    Orange {
+      translation 0 0.2 0.569906
+    }
+    Orange {
+      translation 0 0.2 0.409844
+      name "orange(5)"
+    }
+    Orange {
+      translation 0 0.1 0.409844
+      name "orange(1)"
+    }
+    Orange {
+      translation 0 0.1 0.569906
+      name "orange(6)"
+    }
+    Orange {
+      translation 0 0 0.409844
+      name "orange(2)"
+    }
+    Orange {
+      translation 0 0 0.569906
+      name "orange(7)"
+    }
+    Orange {
+      translation 0 -0.1 0.409844
+      name "orange(3)"
+    }
+    Orange {
+      translation 0 -0.1 0.569906
+      name "orange(8)"
+    }
+    Orange {
+      translation 0 -0.2 0.409844
+      name "orange(4)"
+    }
+    Orange {
+      translation 0 -0.2 0.569906
+      name "orange(9)"
+    }
+    RoCKInShelf {
+      name "RSHELF43"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF44"
+    }
+  ]
+}
+DEF SHELF_GROUP23 Pose {
+  translation 6.8 3.4 0
+  children [
+    RoCKInShelf {
+      name "RSHELF45"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF46"
+    }
+  ]
+}
+DEF SHELF_GROUP24 Pose {
+  translation 6.8 2.8 0
+  children [
+    RoCKInShelf {
+      name "RSHELF47"
+    }
+    Orange {
+      translation 0 -0.1 0.569906
+      name "orange(29)"
+    }
+    Orange {
+      translation 0 0 0.569906
+      name "orange(28)"
+    }
+    Orange {
+      translation 0 0.1 0.569906
+      name "orange(27)"
+    }
+    Orange {
+      translation 0 0.2 0.569906
+      name "orange(25)"
+    }
+    Orange {
+      translation 0 -0.2 0.409844
+      name "orange(24)"
+    }
+    Orange {
+      translation 0 -0.1 0.409844
+      name "orange(23)"
+    }
+    Orange {
+      translation 0 0 0.409844
+      name "orange(22)"
+    }
+    Orange {
+      translation 0 0.1 0.409844
+      name "orange(21)"
+    }
+    Orange {
+      translation 0 0.2 0.409844
+      name "orange(20)"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF48"
+    }
+    HoneyJar {
+      translation 0 -0.2 0.859422
+      name "honey jar(30)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.1 0.859422
+      name "honey jar(29)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0 0.859422
+      name "honey jar(28)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.1 0.859422
+      name "honey jar(27)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.2 0.859422
+      name "honey jar(26)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.2 0.689438
+      name "honey jar(25)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 -0.1 0.689438
+      name "honey jar(24)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0 0.689438
+      name "honey jar(23)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.1 0.689438
+      name "honey jar(22)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.2 0.689438
+      name "honey jar(20)"
+      color 0.72549 0.839216 0.458824
+    }
+    Orange {
+      translation 0 -0.2 0.569906
+      name "orange(30)"
+    }
+  ]
+}
+DEF SHELF_GROUP25 Pose {
+  translation 6.8 2.2 0
+  children [
+    RoCKInShelf {
+      name "RSHELF49"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF50"
+    }
+  ]
+}
+DEF SHELF_GROUP26 Pose {
+  translation 6.8 1.6 0
+  children [
+    RoCKInShelf {
+      name "RSHELF51"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF52"
+    }
+    HoneyJar {
+      translation 0 -0.2 0.859422
+      name "honey jar(39)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.1 0.859422
+      name "honey jar(38)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0 0.859422
+      name "honey jar(37)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.1 0.859422
+      name "honey jar(36)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.2 0.859422
+      name "honey jar(35)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.2 0.689438
+      name "honey jar(34)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 -0.1 0.689438
+      name "honey jar(33)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0 0.689438
+      name "honey jar(32)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.1 0.689438
+      name "honey jar(31)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.2 0.689438
+      name "honey jar(21)"
+      color 0.72549 0.839216 0.458824
+    }
+    Orange {
+      translation 0 -0.2 0.569906
+      name "orange(40)"
+    }
+    Orange {
+      translation 0 -0.1 0.569906
+      name "orange(39)"
+    }
+    Orange {
+      translation 0 0 0.569906
+      name "orange(38)"
+    }
+    Orange {
+      translation 0 0.1 0.569906
+      name "orange(37)"
+    }
+    Orange {
+      translation 0 0.2 0.569906
+      name "orange(36)"
+    }
+    Orange {
+      translation 0 -0.2 0.409844
+      name "orange(35)"
+    }
+    Orange {
+      translation 0 -0.1 0.409844
+      name "orange(34)"
+    }
+    Orange {
+      translation 0 0 0.409844
+      name "orange(33)"
+    }
+    Orange {
+      translation 0 0.1 0.409844
+      name "orange(32)"
+    }
+    Orange {
+      translation 0 0.2 0.409844
+      name "orange(31)"
+    }
+  ]
+}
+DEF SHELF_GROUP27 Pose {
+  translation 6.8 1 0
+  children [
+    RoCKInShelf {
+      name "RSHELF53"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF54"
+    }
+  ]
+}
+DEF SHELF_GROUP28 Pose {
+  translation 6.8 0.4 0
+  children [
+    RoCKInShelf {
+      name "RSHELF55"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF56"
+    }
+    HoneyJar {
+      translation 0 -0.2 0.859422
+      name "honey jar(39)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.1 0.859422
+      name "honey jar(38)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0 0.859422
+      name "honey jar(37)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.1 0.859422
+      name "honey jar(36)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.2 0.859422
+      name "honey jar(35)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.2 0.689438
+      name "honey jar(34)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 -0.1 0.689438
+      name "honey jar(33)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0 0.689438
+      name "honey jar(32)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.1 0.689438
+      name "honey jar(31)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.2 0.689438
+      name "honey jar(21)"
+      color 0.72549 0.839216 0.458824
+    }
+    Orange {
+      translation 0 -0.2 0.569906
+      name "orange(40)"
+    }
+    Orange {
+      translation 0 -0.1 0.569906
+      name "orange(39)"
+    }
+    Orange {
+      translation 0 0 0.569906
+      name "orange(38)"
+    }
+    Orange {
+      translation 0 0.1 0.569906
+      name "orange(37)"
+    }
+    Orange {
+      translation 0 0.2 0.569906
+      name "orange(36)"
+    }
+    Orange {
+      translation 0 -0.2 0.409844
+      name "orange(35)"
+    }
+    Orange {
+      translation 0 -0.1 0.409844
+      name "orange(34)"
+    }
+    Orange {
+      translation 0 0 0.409844
+      name "orange(33)"
+    }
+    Orange {
+      translation 0 0.1 0.409844
+      name "orange(32)"
+    }
+    Orange {
+      translation 0 0.2 0.409844
+      name "orange(31)"
+    }
+  ]
+}
+DEF SHELF_GROUP29 Pose {
+  translation 6.8 -0.2 0
+  children [
+    RoCKInShelf {
+      name "RSHELF57"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF58"
+    }
+  ]
+}
+DEF SHELF_GROUP30 Pose {
+  translation 6.8 -0.8 0
+  children [
+    RoCKInShelf {
+      name "RSHELF59"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF60"
+    }
+    HoneyJar {
+      translation 0 -0.2 0.859422
+      name "honey jar(39)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.1 0.859422
+      name "honey jar(38)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0 0.859422
+      name "honey jar(37)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.1 0.859422
+      name "honey jar(36)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.2 0.859422
+      name "honey jar(35)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.2 0.689438
+      name "honey jar(34)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 -0.1 0.689438
+      name "honey jar(33)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0 0.689438
+      name "honey jar(32)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.1 0.689438
+      name "honey jar(31)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.2 0.689438
+      name "honey jar(21)"
+      color 0.72549 0.839216 0.458824
+    }
+    Orange {
+      translation 0 -0.2 0.569906
+      name "orange(40)"
+    }
+    Orange {
+      translation 0 -0.1 0.569906
+      name "orange(39)"
+    }
+    Orange {
+      translation 0 0 0.569906
+      name "orange(38)"
+    }
+    Orange {
+      translation 0 0.1 0.569906
+      name "orange(37)"
+    }
+    Orange {
+      translation 0 0.2 0.569906
+      name "orange(36)"
+    }
+    Orange {
+      translation 0 -0.2 0.409844
+      name "orange(35)"
+    }
+    Orange {
+      translation 0 -0.1 0.409844
+      name "orange(34)"
+    }
+    Orange {
+      translation 0 0 0.409844
+      name "orange(33)"
+    }
+    Orange {
+      translation 0 0.1 0.409844
+      name "orange(32)"
+    }
+    Orange {
+      translation 0 0.2 0.409844
+      name "orange(31)"
+    }
+  ]
+}
+DEF SHELF_GROUP31 Pose {
+  translation 6.8 -1.4 0
+  children [
+    RoCKInShelf {
+      name "RSHELF61"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF62"
+    }
+  ]
+}
+DEF SHELF_GROUP32 Pose {
+  translation 6.8 -2 0
+  children [
+    RoCKInShelf {
+      name "RSHELF63"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF64"
+    }
+    HoneyJar {
+      translation 0 -0.2 0.859422
+      name "honey jar(39)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.1 0.859422
+      name "honey jar(38)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0 0.859422
+      name "honey jar(37)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.1 0.859422
+      name "honey jar(36)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.2 0.859422
+      name "honey jar(35)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.2 0.689438
+      name "honey jar(34)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 -0.1 0.689438
+      name "honey jar(33)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0 0.689438
+      name "honey jar(32)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.1 0.689438
+      name "honey jar(31)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.2 0.689438
+      name "honey jar(21)"
+      color 0.72549 0.839216 0.458824
+    }
+    Orange {
+      translation 0 -0.2 0.569906
+      name "orange(40)"
+    }
+    Orange {
+      translation 0 -0.1 0.569906
+      name "orange(39)"
+    }
+    Orange {
+      translation 0 0 0.569906
+      name "orange(38)"
+    }
+    Orange {
+      translation 0 0.1 0.569906
+      name "orange(37)"
+    }
+    Orange {
+      translation 0 0.2 0.569906
+      name "orange(36)"
+    }
+    Orange {
+      translation 0 -0.2 0.409844
+      name "orange(35)"
+    }
+    Orange {
+      translation 0 -0.1 0.409844
+      name "orange(34)"
+    }
+    Orange {
+      translation 0 0 0.409844
+      name "orange(33)"
+    }
+    Orange {
+      translation 0 0.1 0.409844
+      name "orange(32)"
+    }
+    Orange {
+      translation 0 0.2 0.409844
+      name "orange(31)"
+    }
+  ]
+}
+DEF SHELF_GROUP33 Pose {
+  translation 6.8 -2.6 0
+  children [
+    RoCKInShelf {
+      name "RSHELF65"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF66"
+    }
+  ]
+}
+DEF SHELF_GROUP34 Pose {
+  translation 6.8 -3.2 0
+  children [
+    RoCKInShelf {
+      name "RSHELF67"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF68"
+    }
+    HoneyJar {
+      translation 0 -0.2 0.859422
+      name "honey jar(39)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.1 0.859422
+      name "honey jar(38)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0 0.859422
+      name "honey jar(37)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.1 0.859422
+      name "honey jar(36)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 0.2 0.859422
+      name "honey jar(35)"
+      color 0.839216 0.454902 0.2
+    }
+    HoneyJar {
+      translation 0 -0.2 0.689438
+      name "honey jar(34)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 -0.1 0.689438
+      name "honey jar(33)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0 0.689438
+      name "honey jar(32)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.1 0.689438
+      name "honey jar(31)"
+      color 0.72549 0.839216 0.458824
+    }
+    HoneyJar {
+      translation 0 0.2 0.689438
+      name "honey jar(21)"
+      color 0.72549 0.839216 0.458824
+    }
+    Orange {
+      translation 0 -0.2 0.569906
+      name "orange(40)"
+    }
+    Orange {
+      translation 0 -0.1 0.569906
+      name "orange(39)"
+    }
+    Orange {
+      translation 0 0 0.569906
+      name "orange(38)"
+    }
+    Orange {
+      translation 0 0.1 0.569906
+      name "orange(37)"
+    }
+    Orange {
+      translation 0 0.2 0.569906
+      name "orange(36)"
+    }
+    Orange {
+      translation 0 -0.2 0.409844
+      name "orange(35)"
+    }
+    Orange {
+      translation 0 -0.1 0.409844
+      name "orange(34)"
+    }
+    Orange {
+      translation 0 0 0.409844
+      name "orange(33)"
+    }
+    Orange {
+      translation 0 0.1 0.409844
+      name "orange(32)"
+    }
+    Orange {
+      translation 0 0.2 0.409844
+      name "orange(31)"
+    }
+  ]
+}
+DEF SHELF_GROUP35 Pose {
+  translation 6.8 -3.8 0
+  children [
+    RoCKInShelf {
+      name "RSHELF69"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF70"
+    }
+  ]
+}
+Wall {
+  translation -7.02652 0 1.42108e-14
+  name "LW-A1"
+  size 0.06 9.23 2.5
+  appearance DEF SIDE_WALLS Roughcast {
+    textureTransform TextureTransform {
+      scale 3 3
+    }
+  }
+}
+Wall {
+  translation 6.99967 0.01 3.19744e-14
+  name "RW-A2"
+  size 0.06 9.23 2.5
+  appearance DEF SIDE_WALLS Roughcast {
+    textureTransform TextureTransform {
+      scale 3 3
+    }
+  }
+}
+Wall {
+  translation 1.16667 -4.58 -3.55271e-15
+  rotation 0 0 -1 1.5708003061004252
+  name "W-B2"
+  size 0.06 1.2 2.5
+  appearance DEF INTER_WALLS Roughcast {
+    textureTransform TextureTransform {
+      scale 0.3 2.2
+    }
+  }
+}
+Wall {
+  translation -5.45558 -4.58 -1.54543e-13
+  rotation 0 0 1 -1.5708003061004252
+  name "WB-2"
+  size 0.06 3.1 2.5
+  appearance DEF INTER_WALLS Roughcast {
+    textureTransform TextureTransform {
+      scale 0.3 2.2
+    }
+  }
+}
+Wall {
+  translation 6.56816 -4.58 1.59872e-14
+  rotation 0 0 -1 1.5708
+  name "WB-2"
+  size 0.06 0.9 2.5
+  appearance DEF INTER_WALLS Roughcast {
+    textureTransform TextureTransform {
+      scale 0.3 2.2
+    }
+  }
+}
+Wall {
+  translation -0.00995724 4.6475 1.59872e-14
+  rotation 0 0 1 -1.5708003061004252
+  name "W-B1"
+  size 0.06 14 2.5
+}
+Window {
+  translation -3.17068 -4.58 1.42109e-14
+  rotation 0 0 1 -1.5708003061004252
+  name "Window1"
+  size 0.04 1.6 2.5
+  bottomWallHeight 1
+  frameSize 0.02 0.05 0.02
+  frameAppearance DEF WINDOWS_WOOD MattePaint {
+    baseColor 0.133333 0.0666667 0
+  }
+}
+Window {
+  translation 2.46184 -4.58 3.55271e-15
+  rotation 0 0 1 -1.5708003061004252
+  name "Window4"
+  size 0.04 1.5 2.5
+  bottomWallHeight 1
+  frameSize 0.02 0.05 0.02
+  frameAppearance DEF WINDOWS_WOOD MattePaint {
+    baseColor 0.133333 0.0666667 0
+  }
+}
+Window {
+  translation -1.66204 -4.58 4.08562e-14
+  rotation 0 0 1 -1.5708003061004252
+  name "Window2"
+  size 0.04 1.5 2.5
+  bottomWallHeight 1
+  frameSize 0.02 0.05 0.02
+  frameAppearance DEF WINDOWS_WOOD MattePaint {
+    baseColor 0.133333 0.0666667 0
+  }
+}
+Window {
+  translation 3.96718 -4.58 1.77636e-15
+  rotation 0 0 1 -1.5708003061004252
+  name "Window5"
+  size 0.04 1.5 2.5
+  bottomWallHeight 1
+  frameSize 0.02 0.05 0.02
+  frameAppearance DEF WINDOWS_WOOD MattePaint {
+    baseColor 0.133333 0.0666667 0
+  }
+}
+Window {
+  translation 5.36762 -4.58 3.55272e-14
+  rotation 0 0 1 -1.5708003061004252
+  name "Window6"
+  size 0.04 1.5 2.5
+  bottomWallHeight 1
+  frameSize 0.02 0.05 0.02
+  frameAppearance DEF WINDOWS_WOOD MattePaint {
+    baseColor 0.133333 0.0666667 0
+  }
+}
+Window {
+  translation -0.170043 -4.58 3.19745e-14
+  rotation 0 0 1 -1.5708003061004252
+  name "Window3"
+  size 0.04 1.5 2.5
+  bottomWallHeight 1
+  frameSize 0.02 0.05 0.02
+  frameAppearance DEF WINDOWS_WOOD MattePaint {
+    baseColor 0.133333 0.0666667 0
+  }
+}
+Door {
+  translation -5 4.72 0
+  rotation 0 0 -1 1.5708
+  size 0.06 1 2.5
+  doorThickness 0.09
+  frameSize 0.01 0.05 0.05
+  frameAppearance MattePaint {
+    baseColor 0.133333 0.0666667 0
+  }
+}
+Robot {
+  translation -3.39415 -3.14406 0.015
+  children [
+    DEF BODY Pose {
+      translation 0 0 -0.015
+      children [
+        Group {
+        }
+        CadShape {
+          url [
+            "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/bitcraze/crazyflie/protos/meshes/cf2_assembly.dae"
+          ]
+        }
+      ]
+    }
+    DEF MULTIRANGER Pose {
+      translation 0 0 0.01
+      children [
+        DistanceSensor {
+          rotation 0 0 1 -1.57
+          name "range_right"
+          lookupTable [
+            0 0 0
+            2 2000 0
+          ]
+        }
+        DistanceSensor {
+          rotation 0 0 1 3.14
+          name "range_back"
+          lookupTable [
+            0 0 0
+            2 2000 0
+          ]
+        }
+        DistanceSensor {
+          rotation 0 0 1 1.57
+          name "range_left"
+          lookupTable [
+            0 0 0
+            2 2000 0
+          ]
+        }
+        DistanceSensor {
+          name "range_front"
+          lookupTable [
+            0 0 0
+            2 2000 0
+          ]
+        }
+      ]
+    }
+    Camera {
+      translation 0.03 0 0.01
+      fieldOfView 1.52
+      width 324
+      height 244
+    }
+    GPS {
+    }
+    Gyro {
+    }
+    InertialUnit {
+      name "inertial_unit"
+    }
+    DEF M1 Propeller {
+      shaftAxis 0 0 1
+      centerOfThrust 0.031 -0.031 0.008
+      thrustConstants -4e-05 0
+      torqueConstants 2.4e-06 0
+      fastHelixThreshold 50
+      device RotationalMotor {
+        name "m1_motor"
+        maxVelocity 600
+        maxTorque 30
+      }
+      fastHelix Solid {
+        translation 0.031 -0.031 0.008
+        children [
+          DEF FASTHELIX Shape {
+            appearance PBRAppearance {
+              baseColor 0.1 0.1 0.1
+              baseColorMap ImageTexture {
+                url [
+                  "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/default/protos/textures/fast_helix.png"
+                ]
+              }
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.001
+              radius 0.025
+            }
+          }
+        ]
+      }
+      slowHelix Solid {
+        translation 0.031 -0.031 0.008
+        children [
+          DEF PROP_SHAPE Shape {
+            appearance DEF PLASTIC PBRAppearance {
+              baseColor 0 0 0
+              metalness 0.3
+            }
+            geometry Mesh {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/bitcraze/crazyflie/protos/meshes/ccw_prop.dae"
+              ]
+            }
+          }
+        ]
+      }
+    }
+    DEF M2 Propeller {
+      shaftAxis 0 0 1
+      centerOfThrust -0.031 -0.031 0.008
+      thrustConstants 4e-05 0
+      torqueConstants 2.4e-06 0
+      fastHelixThreshold 50
+      device RotationalMotor {
+        name "m2_motor"
+        maxVelocity 600
+        maxTorque 30
+      }
+      fastHelix Solid {
+        translation -0.031 -0.031 0.008
+        children [
+          USE FASTHELIX
+        ]
+      }
+      slowHelix Solid {
+        translation -0.031 -0.031 0.008
+        children [
+          USE PROP_SHAPE
+        ]
+      }
+    }
+    DEF M3 Propeller {
+      shaftAxis 0 0 1
+      centerOfThrust -0.031 0.031 0.008
+      thrustConstants -4e-05 0
+      torqueConstants 2.4e-06 0
+      fastHelixThreshold 50
+      device RotationalMotor {
+        name "m3_motor"
+        maxVelocity 600
+        maxTorque 30
+      }
+      fastHelix Solid {
+        translation -0.031 0.031 0.008
+        children [
+          USE FASTHELIX
+        ]
+      }
+      slowHelix Solid {
+        translation -0.031 0.031 0.008
+        children [
+          USE PROP_SHAPE
+        ]
+      }
+    }
+    DEF M4 Propeller {
+      shaftAxis 0 0 1
+      centerOfThrust 0.031 0.031 0.008
+      thrustConstants 4e-05 0
+      torqueConstants 2.4e-06 0
+      fastHelixThreshold 50
+      device RotationalMotor {
+        name "m4_motor"
+        maxVelocity 600
+        maxTorque 30
+      }
+      fastHelix Solid {
+        translation 0.031 0.031 0.008
+        children [
+          USE FASTHELIX
+        ]
+      }
+      slowHelix DEF PROP Solid {
+        translation 0.031 0.031 0.007
+        children [
+          USE PROP_SHAPE
+        ]
+      }
+    }
+  ]
+  name "Crazyflie"
+  model "Bitcraze's Crazyflie"
+  boundingObject Cylinder {
+    height 0.03
+    radius 0.05
+  }
+  physics Physics {
+    density -1
+    mass 0.05
+  }
+  controller "crazyflie_auto_navigation"
+}
+CeilingSpotLight {
+  translation 3.79361 -0.8029 1.93
+  spotLightIntensity 8
+}
+CeilingSpotLight {
+  translation 6.18547 -3.59269 1.93
+  name "ceiling light(16)"
+  spotLightIntensity 8
+}
+CeilingSpotLight {
+  translation 6.1144 -0.674035 1.93
+  name "ceiling light(19)"
+  spotLightIntensity 8
+}
+CeilingSpotLight {
+  translation 6.04792 1.30949 1.93
+  name "ceiling light(17)"
+  spotLightIntensity 8
+}
+CeilingSpotLight {
+  translation 6.09262 3.71431 1.93
+  name "ceiling light(18)"
+  spotLightIntensity 8
+}
+CeilingSpotLight {
+  translation 3.90401 3.59344 1.93
+  name "ceiling light(2)"
+  spotLightIntensity 8
+}
+CeilingSpotLight {
+  translation 3.82099 1.20272 1.93
+  name "ceiling light(3)"
+  spotLightIntensity 8
+}
+CeilingSpotLight {
+  translation 0.929658 -3.23146 1.93
+  name "ceiling light(1)"
+  spotLightIntensity 8
+}
+CeilingSpotLight {
+  translation -1.86703 -3.32088 1.93
+  name "ceiling light(8)"
+  spotLightIntensity 8
+}
+CeilingSpotLight {
+  translation -4.31966 -3.28601 1.93
+  name "ceiling light(9)"
+  spotLightIntensity 8
+}
+CeilingSpotLight {
+  translation -4.13722 3.67762 1.93
+  name "ceiling light(5)"
+  spotLightIntensity 8
+}
+CeilingSpotLight {
+  translation 0.791783 3.53757 1.93
+  name "ceiling light(13)"
+  spotLightIntensity 8
+}
+CeilingSpotLight {
+  translation -4.00502 1.36224 1.93
+  name "ceiling light(7)"
+  spotLightIntensity 8
+}
+CeilingSpotLight {
+  translation 0.815832 1.49637 1.93
+  name "ceiling light(12)"
+  spotLightIntensity 8
+}
+CeilingSpotLight {
+  translation -1.65032 -0.963523 1.93
+  name "ceiling light(6)"
+  spotLightIntensity 8
+}
+CeilingSpotLight {
+  translation -1.55647 1.31335 1.93
+  rotation 0 0 1 -0.261795307179586
+  name "ceiling light(14)"
+  spotLightIntensity 8
+}
+CeilingSpotLight {
+  translation -1.63594 3.78389 1.93
+  rotation 0 0 1 -0.261795307179586
+  name "ceiling light(15)"
+  spotLightIntensity 8
+}
+CeilingSpotLight {
+  translation -4.23406 -0.955681 1.93
+  name "ceiling light(11)"
+  spotLightIntensity 8
+}
+CeilingSpotLight {
+  translation 0.857536 -0.886617 1.93
+  name "ceiling light(10)"
+  spotLightIntensity 8
+}
+CeilingSpotLight {
+  translation 3.75082 -3.17633 1.93
+  name "ceiling light(4)"
+  spotLightIntensity 8
+}
+RoCKInShelf {
+  translation -5.30213 0.909578 0
+}
+RoCKInShelf {
+  translation -5.30861 2.1062 1.06581e-14
+  name "RoCKIn shelf(7)"
+}
+RoCKInShelf {
+  translation -5.3098 1.51376 5.32907e-15
+  name "RoCKIn shelf(8)"
+}
+RoCKInShelf {
+  translation -5.2647 -0.937263 0
+  name "RoCKIn shelf(1)"
+}
+RoCKInShelf {
+  translation -5.2647 -0.937263 0.49
+  name "RoCKIn shelf(11)"
+}
+RoCKInShelf {
+  translation -5.26414 -1.55047 0
+  name "RoCKIn shelf(5)"
+}
+RoCKInShelf {
+  translation -5.26414 -1.55047 0.5
+  name "RoCKIn shelf(10)"
+}
+RoCKInShelf {
+  translation -5.24522 -2.16808 0
+  name "RoCKIn shelf(6)"
+}
+RoCKInShelf {
+  translation -5.24522 -2.16808 0.52
+  name "RoCKIn shelf(9)"
+}
+RoCKInShelf {
+  translation -5.2884 -0.311245 0
+  name "RoCKIn shelf(4)"
+}
+RoCKInShelf {
+  translation -5.2884 -0.311245 0.46
+  name "RoCKIn shelf(12)"
+}
+RoCKInShelf {
+  translation -5.3 0.3 0
+  name "RoCKIn shelf(3)"
+}
+RoCKInShelf {
+  translation -5.3 0.3 0.46
+  name "RoCKIn shelf(13)"
+}
+RoCKInShelf {
+  translation -5.31191 2.10885 0.46
+  name "RoCKIn shelf(14)"
+}
+RoCKInShelf {
+  translation -5.27923 1.49945 0.46
+  name "RoCKIn shelf(16)"
+}
+RoCKInShelf {
+  translation -5.28032 0.901053 0.46
+  name "RoCKIn shelf(15)"
+}
+RoCKInShelf {
+  translation -5.3 0.3 0
+  name "RoCKIn shelf(2)"
+}

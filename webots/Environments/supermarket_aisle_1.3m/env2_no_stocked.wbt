@@ -1,0 +1,1878 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/lights/protos/CeilingSpotLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Roughcast.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/Window.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/MattePaint.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/plants/protos/PottedTree.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/cabinet/protos/Cabinet.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/PaintedWood.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/samples/contests/rockin/protos/RoCKInShelf.proto"
+
+WorldInfo {
+  info [
+    "An office break room, surrounded by office desks."
+    "This world contains the domestic objects included in Webots."
+    "Doors are interactive."
+    "This means that a robot could open a drawer, leave an object inside it, and close it."
+  ]
+  title "Break Room"
+  basicTimeStep 20
+  FPS 30
+}
+Viewpoint {
+  orientation 0.11706429136827975 0.9346197415453598 -0.3358301511182811 0.7139491850144531
+  position -19.489226850765732 -0.16883590658490608 16.94837951355383
+  follow "Crazyflie"
+}
+TexturedBackground {
+  texture "entrance_hall"
+  luminosity 0.5
+  skybox FALSE
+}
+TexturedBackgroundLight {
+  texture "entrance_hall"
+}
+Floor {
+  translation 0.243 0.93 0
+  rotation 0 0 1 1.5708
+  size 7.7 12.86
+  appearance Parquetry {
+    textureTransform TextureTransform {
+      rotation 1.57
+      scale 0.4 0.4
+    }
+  }
+}
+RoCKInShelf {
+  translation -4.4715 1.37852 -2.66454e-15
+  name "RoCKIn shelf(20)"
+}
+RoCKInShelf {
+  translation -4.4715 1.37852 0.49
+  name "RoCKIn shelf(30)"
+}
+RoCKInShelf {
+  translation -4.48834 2.60155 -1.77636e-15
+  name "RoCKIn shelf(25)"
+}
+RoCKInShelf {
+  translation -4.47178 1.98255 -1.77636e-15
+  name "RoCKIn shelf(32)"
+}
+RoCKInShelf {
+  translation -4.44924 2.60426 0.49
+  name "RoCKIn shelf(31)"
+}
+RoCKInShelf {
+  translation -4.47178 1.98255 0.49
+  name "RoCKIn shelf(33)"
+}
+RoCKInShelf {
+  translation -4.47 0.776207 0
+  name "RoCKIn shelf(24)"
+}
+RoCKInShelf {
+  translation -4.47 0.776207 0.49
+  name "RoCKIn shelf(29)"
+}
+RoCKInShelf {
+  translation -4.48933 -1.05935 -3.1606e-21
+  name "RoCKIn shelf(21)"
+}
+RoCKInShelf {
+  translation -4.48933 -1.05935 0.5
+  name "RoCKIn shelf(26)"
+}
+RoCKInShelf {
+  translation -4.48434 -0.441719 -1.77636e-15
+  name "RoCKIn shelf(23)"
+}
+RoCKInShelf {
+  translation -4.48434 -0.441719 0.48
+  name "RoCKIn shelf(27)"
+}
+RoCKInShelf {
+  translation -4.48037 0.157822 -8.88182e-16
+  name "RoCKIn shelf(22)"
+}
+RoCKInShelf {
+  translation -4.48037 0.157822 0.49
+  name "RoCKIn shelf(28)"
+}
+Cabinet {
+  translation -2.67424 1.04723 3.19743e-14
+  rotation 0 0 1 1.5708
+  name "cabinet(38)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+CeilingSpotLight {
+  translation -2.11757 -2.07309 2
+  name "ceiling spot light"
+  spotLightColor 0.913725 0.72549 0.431373
+  spotLightIntensity 4
+  spotLightCastShadows TRUE
+}
+CeilingSpotLight {
+  translation 5.71551 -2.12835 2
+  name "ceiling spot light(1)"
+  spotLightColor 0.913725 0.72549 0.431373
+  spotLightIntensity 4
+  spotLightCastShadows TRUE
+}
+CeilingSpotLight {
+  translation 1.2222 -2.10778 2
+  name "ceiling spot light(2)"
+  spotLightColor 0.913725 0.72549 0.431373
+  spotLightIntensity 4
+  spotLightCastShadows TRUE
+}
+Wall {
+  translation 7.70588 -0.892737 0
+  name "wall(1)"
+  size 0.05 3.55 0.62
+  appearance DEF SMALL_WALLS Roughcast {
+    colorOverride 0.890196 0.803922 1
+    textureTransform TextureTransform {
+      scale 1 2.4
+    }
+  }
+}
+Wall {
+  translation -6.17 0.92 0
+  name "wall(A)"
+  size 0.06 7.7 2.5
+  appearance DEF SIDE_WALLS Roughcast {
+    textureTransform TextureTransform {
+      scale 3 3
+    }
+  }
+}
+Wall {
+  translation -5.94 -2.9 0
+  rotation 0 0 1 -1.5708003061004252
+  name "wall(B)1"
+  size 0.06 0.4 2.5
+  appearance DEF INTER_WALLS Roughcast {
+    textureTransform TextureTransform {
+      scale 0.3 2.2
+    }
+  }
+}
+Window {
+  translation -5.19 -2.9 0
+  rotation 0 0 1 -1.5708003061004252
+  name "window(B)2"
+  size 0.06 1.1 2.5
+  bottomWallHeight 1
+  frameSize 0.02 0.05 0.02
+  windowSillSize 0.3 0.05
+  frameAppearance DEF WINDOWS_WOOD MattePaint {
+    baseColor 0.133333 0.0666667 0
+  }
+}
+Window {
+  translation -3.84 -2.9 0
+  rotation 0 0 1 -1.5708003061004252
+  name "window(B)3"
+  size 0.06 1.6 2.5
+  bottomWallHeight 1
+  frameSize 0.02 0.05 0.02
+  windowSillSize 0.3 0.05
+  frameAppearance USE WINDOWS_WOOD
+}
+Wall {
+  translation -2.84 -2.9 0
+  rotation 0 0 1 -1.5708003061004252
+  name "wall(B)4"
+  size 0.06 0.4 2.5
+  appearance USE INTER_WALLS
+}
+Window {
+  translation -2.09 -2.9 0
+  rotation 0 0 1 -1.5708003061004252
+  name "window(B)5"
+  size 0.06 1.1 2.5
+  bottomWallHeight 1
+  frameSize 0.02 0.05 0.02
+  windowSillSize 0.3 0.05
+  frameAppearance USE WINDOWS_WOOD
+}
+Window {
+  translation -0.74 -2.9 0
+  rotation 0 0 1 -1.5708003061004252
+  name "window(B)6"
+  size 0.06 1.6 2.5
+  bottomWallHeight 1
+  frameSize 0.02 0.05 0.02
+  windowSillSize 0.3 0.05
+  frameAppearance USE WINDOWS_WOOD
+}
+Wall {
+  translation 0.26 -2.9 0
+  rotation 0 0 1 -1.5708003061004252
+  name "wall(B)7"
+  size 0.06 0.4 2.5
+  appearance USE INTER_WALLS
+}
+Window {
+  translation 1 -2.9 0
+  rotation 0 0 1 -1.5708003061004252
+  name "window(B)8"
+  size 0.06 1.1 2.5
+  bottomWallHeight 1
+  frameSize 0.02 0.05 0.02
+  windowSillSize 0.3 0.05
+  frameAppearance USE WINDOWS_WOOD
+}
+Window {
+  translation 2.35 -2.9 0
+  rotation 0 0 1 -1.5708003061004252
+  name "window(B)9"
+  size 0.06 1.6 2.5
+  bottomWallHeight 1
+  frameSize 0.02 0.05 0.02
+  windowSillSize 0.3 0.05
+  frameAppearance USE WINDOWS_WOOD
+}
+Wall {
+  translation 3.35 -2.9 0
+  rotation 0 0 1 -1.5708003061004252
+  name "wall(B)10"
+  size 0.06 0.4 2.5
+  appearance USE INTER_WALLS
+}
+Window {
+  translation 4.1 -2.9 0
+  rotation 0 0 1 -1.5708003061004252
+  name "window(B)11"
+  size 0.06 1.1 2.5
+  bottomWallHeight 1
+  frameSize 0.02 0.05 0.02
+  windowSillSize 0.3 0.05
+  frameAppearance USE WINDOWS_WOOD
+}
+Window {
+  translation 5.45 -2.9 0
+  rotation 0 0 1 -1.5708003061004252
+  name "window(B)12"
+  size 0.06 1.6 2.5
+  bottomWallHeight 1
+  frameSize 0.02 0.05 0.02
+  windowSillSize 0.3 0.05
+  frameAppearance USE WINDOWS_WOOD
+}
+Wall {
+  translation 6.45 -2.9 0
+  rotation 0 0 1 -1.5708003061004252
+  name "wall(B)13"
+  size 0.06 0.4 2.5
+  appearance USE INTER_WALLS
+}
+Wall {
+  translation 6.68 0.92 0
+  name "wall(C)"
+  size 0.06 7.7 2.5
+  appearance USE SIDE_WALLS
+}
+Wall {
+  translation 3.51577 4.52317 1.77636e-15
+  rotation 0 0 1 -1.5708003061004252
+  name "wall(D)1"
+  size 0.06 6.2 2.5
+}
+Wall {
+  translation -3.34982 4.49941 3.55271e-15
+  rotation 0 0 1 -1.5708003061004252
+  name "wall(D)2"
+  size 0.06 5.7 2.5
+}
+Wall {
+  translation -1.57239 4.52901 -1.40332e-13
+  rotation 0 0 1 -1.5708003061004252
+  name "wall(D)2(1)"
+  size 0.06 5.7 2.5
+}
+PottedTree {
+  translation -5.78 -2.17 0
+  name "potted tree(2)"
+}
+Cabinet {
+  translation 4.88848 -0.850367 1.77635e-14
+  rotation 0 0 -1 -1.5707953071795862
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 3.59322 -0.849049 2.75334e-14
+  rotation 0 0 -1 -1.5707953071795862
+  name "cabinet(1)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 4.8011 1.02361 1.59871e-14
+  rotation 0 0 -1 -1.5707953071795862
+  name "cabinet(4)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation -1.34354 3.07108 1.24344e-14
+  rotation 0 0 1 1.5708
+  name "cabinet(14)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation -1.38818 1.03822 1.77635e-14
+  rotation 0 0 1 1.5708
+  name "cabinet(39)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation -2.6601 3.06585 3.37507e-14
+  rotation 0 0 1 1.5708
+  name "cabinet(18)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation -0.14512 1.04387 1.77635e-14
+  rotation 0 0 1 1.5708
+  name "cabinet(17)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation -0.0636769 3.07897 1.77635e-14
+  rotation 0 0 1 1.5708
+  name "cabinet(40)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 3.54907 3.06917 1.77635e-14
+  rotation 0 0 1 1.5708
+  name "cabinet(44)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 4.87153 3.05961 1.77635e-14
+  rotation 0 0 1 1.5708
+  name "cabinet(46)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 2.24668 3.06289 1.77635e-14
+  rotation 0 0 1 1.5708
+  name "cabinet(45)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 2.24302 1.04 8.88167e-15
+  rotation 0 0 -1 -1.5707953071795862
+  name "cabinet(16)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 3.50555 1.03005 1.59871e-14
+  rotation 0 0 -1 -1.5707953071795862
+  name "cabinet(15)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 2.28977 -0.843 1.77635e-14
+  rotation 0 0 -1 -1.5707953071795862
+  name "cabinet(2)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation -0.19128 -0.842631 1.59871e-14
+  rotation 0 0 1 1.5708
+  name "cabinet(5)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 4.79915 0.472003 8.88169e-15
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(8)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.15
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 5.32497 2.69121 -9.59232e-14
+  rotation 0 0 1 -5.307179586466759e-06
+  name "cabinet(28)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.15
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 0.363544 2.72854 -8.52651e-14
+  rotation 0 0 1 -5.307179586466759e-06
+  name "cabinet(47)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.15
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 0.245746 -1.2458 -7.90479e-14
+  rotation 0 0 1 -5.307179586466759e-06
+  name "cabinet(41)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.15
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 0.304985 0.676124 -8.17124e-14
+  rotation 0 0 1 -5.307179586466759e-06
+  name "cabinet(54)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.15
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 1.80962 2.69148 -7.99361e-14
+  rotation 0 0 1 3.14159
+  name "cabinet(31)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.15
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 1.88547 -1.13602 4.08561e-14
+  rotation 0 0 1 3.14159
+  name "cabinet(48)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.15
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 1.77166 0.792985 -7.28307e-14
+  rotation 0 0 1 3.14159
+  name "cabinet(59)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.15
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation -3.12037 2.71862 -6.21725e-14
+  rotation 0 0 1 3.14159
+  name "cabinet(37)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.15
+  ]
+  columnsWidths [
+    0.4, 0.2, 0.2
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation -3.24341 -1.23646 -5.32907e-14
+  rotation 0 0 1 3.14159
+  name "cabinet(43)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.15
+  ]
+  columnsWidths [
+    0.4, 0.2, 0.2
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation -3.16949 0.741435 -5.32907e-14
+  rotation 0 0 1 3.14159
+  name "cabinet(50)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.15
+  ]
+  columnsWidths [
+    0.4, 0.2, 0.2
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 5.25759 0.754746 -7.63834e-14
+  rotation 0 0 1 1.01503e-06
+  name "cabinet(30)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.15
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 5.32263 -1.19226 3.55271e-14
+  rotation 0 0 1 1.01503e-06
+  name "cabinet(58)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.15
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 3.51952 0.466746 1.0658e-14
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(9)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation -2.71699 0.475128 8.88169e-15
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(10)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation -2.78287 -1.60296 2.13162e-14
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(51)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation -1.44635 0.463716 1.24344e-14
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(13)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation -0.226238 -1.60538 1.24344e-14
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(52)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 2.34496 -1.42621 3.0198e-14
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(56)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 4.85278 -1.4301 2.66453e-14
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(55)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 3.66199 -1.4301 3.0198e-14
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(57)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation -1.48799 -1.60538 1.24344e-14
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(53)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation -0.158323 0.464594 1.24344e-14
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(12)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 4.82646 2.2729 1.24344e-14
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(11)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation -3.29955 3.70935 -0.09
+  rotation 0 0 1 1.38733e-06
+  name "cabinet(32)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+  primaryAppearance PaintedWood {
+    colorOverride 0.6 0.7 0.8
+  }
+}
+Cabinet {
+  translation -2.90987 4.41923 -4.44102e-15
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(25)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.3, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+  primaryAppearance PaintedWood {
+    colorOverride 0.6 0.7 0.8
+  }
+}
+Cabinet {
+  translation -1.90512 4.41708 -4.44102e-15
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(60)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+  primaryAppearance PaintedWood {
+    colorOverride 0.6 0.7 0.8
+  }
+}
+Cabinet {
+  translation 0.707506 4.41709 -1.48325e-13
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(33)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+  primaryAppearance PaintedWood {
+    colorOverride 0.6 0.7 0.8
+  }
+}
+Cabinet {
+  translation -0.599494 4.41562 6.21712e-15
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(42)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+  primaryAppearance PaintedWood {
+    colorOverride 0.6 0.7 0.8
+  }
+}
+Cabinet {
+  translation 2.02334 4.40825 -4.44102e-15
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(34)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+  primaryAppearance PaintedWood {
+    colorOverride 0.6 0.7 0.8
+  }
+}
+Cabinet {
+  translation 3.31151 4.39846 -1.86517e-13
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(35)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+  primaryAppearance PaintedWood {
+    colorOverride 0.6 0.7 0.8
+  }
+}
+Cabinet {
+  translation 4.59912 4.3952 -2.5846e-13
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(36)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+  primaryAppearance PaintedWood {
+    colorOverride 0.6 0.7 0.8
+  }
+}
+Cabinet {
+  translation 5.9 4.38532 -2.1494e-13
+  rotation 0 0 -0.9999999999999999 1.5707953071795862
+  name "cabinet(49)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+  primaryAppearance PaintedWood {
+    colorOverride 0.6 0.7 0.8
+  }
+}
+Cabinet {
+  translation 3.5203 2.27558 1.24344e-14
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(20)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation -0.0866672 2.37401 1.54542e-13
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(21)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation -2.67163 2.37297 1.52766e-13
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(23)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation -1.37986 2.37225 1.50101e-13
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(24)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 2.2096 2.28712 1.24344e-14
+  rotation 0 0 -1 1.5708
+  name "cabinet(22)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.2, 0.2, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation 2.24355 0.465 8.88169e-15
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(19)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation -1.49634 -0.849095 1.59871e-14
+  rotation 0 0 1 1.5708
+  name "cabinet(6)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Cabinet {
+  translation -2.80633 -0.854593 1.24344e-14
+  rotation 0 0 1 1.5708
+  name "cabinet(7)"
+  depth 0.2
+  innerThickness 0.01
+  rowsHeights [
+    0.3, 0.15, 0.15, 0.15, 0.2
+  ]
+  columnsWidths [
+    0.9, 0.17, 0.17
+  ]
+  layout [
+    "Shelf (1, 5, 3, 0)"
+    "Shelf (1, 4, 3, 0)"
+    "Shelf (1, 3, 3, 0)"
+    "Shelf (1, 2, 3, 0)"
+    "Shelf (1, 3, 0, 1)"
+    "Shelf (2, 3, 0, 1)"
+  ]
+  handle NULL
+}
+Robot {
+  translation -3.39415 -2.14406 0.015
+  children [
+    DEF BODY Pose {
+      translation 0 0 -0.015
+      children [
+        Group {
+        }
+        CadShape {
+          url [
+            "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/bitcraze/crazyflie/protos/meshes/cf2_assembly.dae"
+          ]
+        }
+      ]
+    }
+    DEF MULTIRANGER Pose {
+      translation 0 0 0.01
+      children [
+        DistanceSensor {
+          rotation 0 0 1 -1.57
+          name "range_right"
+          lookupTable [
+            0 0 0
+            2 2000 0
+          ]
+        }
+        DistanceSensor {
+          rotation 0 0 1 3.14
+          name "range_back"
+          lookupTable [
+            0 0 0
+            2 2000 0
+          ]
+        }
+        DistanceSensor {
+          rotation 0 0 1 1.57
+          name "range_left"
+          lookupTable [
+            0 0 0
+            2 2000 0
+          ]
+        }
+        DistanceSensor {
+          name "range_front"
+          lookupTable [
+            0 0 0
+            2 2000 0
+          ]
+        }
+      ]
+    }
+    Camera {
+      translation 0.03 0 0.01
+      fieldOfView 1.52
+      width 324
+      height 244
+    }
+    GPS {
+    }
+    Gyro {
+    }
+    InertialUnit {
+      name "inertial_unit"
+    }
+    DEF M1 Propeller {
+      shaftAxis 0 0 1
+      centerOfThrust 0.031 -0.031 0.008
+      thrustConstants -4e-05 0
+      torqueConstants 2.4e-06 0
+      fastHelixThreshold 50
+      device RotationalMotor {
+        name "m1_motor"
+        maxVelocity 600
+        maxTorque 30
+      }
+      fastHelix Solid {
+        translation 0.031 -0.031 0.008
+        children [
+          DEF FASTHELIX Shape {
+            appearance PBRAppearance {
+              baseColor 0.1 0.1 0.1
+              baseColorMap ImageTexture {
+                url [
+                  "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/default/protos/textures/fast_helix.png"
+                ]
+              }
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.001
+              radius 0.025
+            }
+          }
+        ]
+      }
+      slowHelix Solid {
+        translation 0.031 -0.031 0.008
+        children [
+          DEF PROP_SHAPE Shape {
+            appearance DEF PLASTIC PBRAppearance {
+              baseColor 0 0 0
+              metalness 0.3
+            }
+            geometry Mesh {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/bitcraze/crazyflie/protos/meshes/ccw_prop.dae"
+              ]
+            }
+          }
+        ]
+      }
+    }
+    DEF M2 Propeller {
+      shaftAxis 0 0 1
+      centerOfThrust -0.031 -0.031 0.008
+      thrustConstants 4e-05 0
+      torqueConstants 2.4e-06 0
+      fastHelixThreshold 50
+      device RotationalMotor {
+        name "m2_motor"
+        maxVelocity 600
+        maxTorque 30
+      }
+      fastHelix Solid {
+        translation -0.031 -0.031 0.008
+        children [
+          USE FASTHELIX
+        ]
+      }
+      slowHelix Solid {
+        translation -0.031 -0.031 0.008
+        children [
+          USE PROP_SHAPE
+        ]
+      }
+    }
+    DEF M3 Propeller {
+      shaftAxis 0 0 1
+      centerOfThrust -0.031 0.031 0.008
+      thrustConstants -4e-05 0
+      torqueConstants 2.4e-06 0
+      fastHelixThreshold 50
+      device RotationalMotor {
+        name "m3_motor"
+        maxVelocity 600
+        maxTorque 30
+      }
+      fastHelix Solid {
+        translation -0.031 0.031 0.008
+        children [
+          USE FASTHELIX
+        ]
+      }
+      slowHelix Solid {
+        translation -0.031 0.031 0.008
+        children [
+          USE PROP_SHAPE
+        ]
+      }
+    }
+    DEF M4 Propeller {
+      shaftAxis 0 0 1
+      centerOfThrust 0.031 0.031 0.008
+      thrustConstants 4e-05 0
+      torqueConstants 2.4e-06 0
+      fastHelixThreshold 50
+      device RotationalMotor {
+        name "m4_motor"
+        maxVelocity 600
+        maxTorque 30
+      }
+      fastHelix Solid {
+        translation 0.031 0.031 0.008
+        children [
+          USE FASTHELIX
+        ]
+      }
+      slowHelix DEF PROP Solid {
+        translation 0.031 0.031 0.007
+        children [
+          USE PROP_SHAPE
+        ]
+      }
+    }
+  ]
+  name "Crazyflie"
+  model "Bitcraze's Crazyflie"
+  boundingObject Cylinder {
+    height 0.03
+    radius 0.05
+  }
+  physics Physics {
+    density -1
+    mass 0.05
+  }
+  controller "my_controller_wigggle_backward"
+}
+CeilingSpotLight {
+  translation 1.12976 -0.15069 2.12
+  spotLightIntensity 7
+}
+CeilingSpotLight {
+  translation 1.18953 3.58579 2.12
+  name "ceiling light(4)"
+  spotLightIntensity 7
+}
+CeilingSpotLight {
+  translation 1.12976 1.53931 2.12
+  name "ceiling light(6)"
+  spotLightIntensity 7
+}
+CeilingSpotLight {
+  translation 5.76128 -0.166328 2.12
+  name "ceiling light(2)"
+  spotLightIntensity 7
+}
+CeilingSpotLight {
+  translation 5.76128 1.69367 2.12
+  name "ceiling light(7)"
+  spotLightIntensity 7
+}
+CeilingSpotLight {
+  translation 5.76128 3.57367 2.12
+  name "ceiling light(8)"
+  spotLightIntensity 7
+}
+CeilingSpotLight {
+  translation -3.74423 -0.223332 2.12
+  name "ceiling light(1)"
+  spotLightIntensity 7
+}
+CeilingSpotLight {
+  translation -3.57681 1.85378 2.12
+  name "ceiling light(10)"
+  spotLightIntensity 7
+}
+CeilingSpotLight {
+  translation -1.871 -0.234514 2.12
+  name "ceiling light(9)"
+  spotLightIntensity 7
+}
+CeilingSpotLight {
+  translation -1.91429 1.73682 2.12
+  name "ceiling light(3)"
+  spotLightIntensity 7
+}
+CeilingSpotLight {
+  translation -1.90457 3.59402 2.12
+  name "ceiling light(5)"
+  spotLightIntensity 7
+}
+RoCKInShelf {
+  translation 6.56 -2.1 0
+}
+RoCKInShelf {
+  translation 6.56 -2.1 0.51
+  name "RoCKIn shelf(10)"
+}
+RoCKInShelf {
+  translation 6.57355 -1.47805 0
+  name "RoCKIn shelf(2)"
+}
+RoCKInShelf {
+  translation 6.57355 -1.47805 0.51
+  name "RoCKIn shelf(11)"
+}
+RoCKInShelf {
+  translation 6.56 -0.86 0
+  name "RoCKIn shelf(1)"
+}
+RoCKInShelf {
+  translation 6.56 -0.86 0.5
+  name "RoCKIn shelf(12)"
+}
+RoCKInShelf {
+  translation 6.58202 0.384032 0
+  name "RoCKIn shelf(3)"
+}
+RoCKInShelf {
+  translation 6.58202 0.384032 0.49
+  name "RoCKIn shelf(14)"
+}
+RoCKInShelf {
+  translation 6.58202 0.98403 0
+  name "RoCKIn shelf(5)"
+}
+RoCKInShelf {
+  translation 6.58202 0.98403 0.48
+  name "RoCKIn shelf(15)"
+}
+RoCKInShelf {
+  translation 6.58202 1.58403 0
+  name "RoCKIn shelf(6)"
+}
+RoCKInShelf {
+  translation 6.58202 1.58403 0.47
+  name "RoCKIn shelf(16)"
+}
+RoCKInShelf {
+  translation 6.58202 2.18403 0
+  name "RoCKIn shelf(7)"
+}
+RoCKInShelf {
+  translation 6.58202 2.18403 0.5
+  name "RoCKIn shelf(17)"
+}
+RoCKInShelf {
+  translation 6.58202 3.43403 0
+  name "RoCKIn shelf(8)"
+}
+RoCKInShelf {
+  translation 6.58202 3.43403 0.47
+  name "RoCKIn shelf(19)"
+}
+RoCKInShelf {
+  translation 6.58202 2.79403 0
+  name "RoCKIn shelf(9)"
+}
+RoCKInShelf {
+  translation 6.58202 2.79403 0.48
+  name "RoCKIn shelf(18)"
+}
+RoCKInShelf {
+  translation 6.58 -0.24 0
+  name "RoCKIn shelf(4)"
+}
+RoCKInShelf {
+  translation 6.58 -0.24 0.48
+  name "RoCKIn shelf(13)"
+}

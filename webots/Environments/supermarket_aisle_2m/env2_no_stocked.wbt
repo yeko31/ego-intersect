@@ -1,0 +1,1953 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/lights/protos/CeilingLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Roughcast.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/Window.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/MattePaint.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/Door.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/plants/protos/PottedTree.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/cabinet/protos/Cabinet.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/PaintedWood.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/samples/contests/rockin/protos/RoCKInShelf.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/cabinet/protos/CabinetHandle.proto"
+
+WorldInfo {
+  info [
+    "An office break room, surrounded by office desks."
+    "This world contains the domestic objects included in Webots."
+    "Doors are interactive."
+    "This means that a robot could open a drawer, leave an object inside it, and close it."
+  ]
+  title "Break Room"
+  basicTimeStep 20
+  FPS 30
+}
+Viewpoint {
+  orientation -0.1611403102944012 0.859190305399195 0.4856190065331689 0.7371352239857273
+  position -15.060316671861639 -6.0607592036440545 13.145799087152536
+}
+TexturedBackground {
+  texture "entrance_hall"
+  luminosity 0.5
+  skybox FALSE
+}
+TexturedBackgroundLight {
+  texture "entrance_hall"
+}
+Floor {
+  rotation 0 0 1 1.5708
+  name "floor1"
+  size 9.4 14
+  tileSize 0.4 0.4
+  appearance Parquetry {
+    colorOverride 1 0.662745 0.368627
+    textureTransform TextureTransform {
+      rotation 1.57
+      scale 0.4 0.4
+    }
+    IBLStrength 3
+  }
+}
+PottedTree {
+  translation -6.5 -4 0
+  name "Plant1"
+}
+Cabinet {
+  translation -7.02652 -2 1.2
+  name "MountWC1"
+  outerThickness 0.02
+  rowsHeights [
+    0.8
+  ]
+  columnsWidths [
+    0.9, 0.8, 0.8, 0.8
+  ]
+  layout [
+    "Drawer (1, 1, 1, 1, 1.5)"
+    "Drawer (2, 1, 1, 1, 1.5)"
+    "Drawer (3, 1, 1, 1, 1.5)"
+    "Drawer (4, 1, 1, 1, 1.5)"
+    "Shelf (1, 1, 0, 1)"
+    "Shelf (2, 1, 0, 1)"
+    "Shelf (3, 1, 0, 1)"
+  ]
+  handle CabinetHandle {
+    handleColor 0.533333 0.541176 0.521569
+  }
+  primaryAppearance MattePaint {
+    baseColor 0.729412 0.741176 0.713725
+  }
+  secondaryAppearance MattePaint {
+    baseColor 0.666667 0.333333 0
+  }
+}
+Cabinet {
+  translation -7.02652 2 1.2
+  name "MountWC2"
+  outerThickness 0.02
+  rowsHeights [
+    0.8
+  ]
+  columnsWidths [
+    0.9, 0.8, 0.8, 0.8
+  ]
+  layout [
+    "Drawer (1, 1, 1, 1, 1.5)"
+    "Drawer (2, 1, 1, 1, 1.5)"
+    "Drawer (3, 1, 1, 1, 1.5)"
+    "Drawer (4, 1, 1, 1, 1.5)"
+    "Shelf (1, 1, 0, 1)"
+    "Shelf (2, 1, 0, 1)"
+    "Shelf (3, 1, 0, 1)"
+  ]
+  handle CabinetHandle {
+    handleColor 0.533333 0.541176 0.521569
+  }
+  primaryAppearance MattePaint {
+    baseColor 0.729412 0.741176 0.713725
+  }
+  secondaryAppearance MattePaint {
+    baseColor 0.666667 0.333333 0
+  }
+}
+DEF C_GROUP1 Pose {
+  translation -0.55 -0.1538 0
+  rotation 0 1 0 0
+  children [
+    Cabinet {
+      translation -2.45 2.77 0
+      rotation 0 0 1 3.14159
+      name "C1"
+      depth 0.3
+      innerThickness 0
+      outerThickness 0
+      rowsHeights [
+        0.4, 0.15, 0.15, 0.15, 0.15
+      ]
+      columnsWidths [
+        0.44, 0.2, 0.2
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+    Cabinet {
+      translation -1 2.77 0
+      rotation 0 0 -0.9999999999999999 1.5707953071795862
+      name "C2"
+      depth 0.45
+      innerThickness 0.01
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        2.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.47451 0.67451 1
+      }
+    }
+    Cabinet {
+      translation -1 2.77088 0
+      rotation 0 0 1 1.5708
+      name "C3"
+      depth 0.45
+      innerThickness 0.01
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        2.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.121569 0.509804 0.101961
+      }
+    }
+    Cabinet {
+      translation 0.45 2.77 0
+      rotation 0 0 -1 5.307156870259904e-06
+      name "C4"
+      depth 0.3
+      innerThickness 0
+      outerThickness 0
+      rowsHeights [
+        0.4, 0.15, 0.15, 0.15, 0.15
+      ]
+      columnsWidths [
+        0.44, 0.2, 0.2
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+  ]
+}
+DEF C_GROUP2 Pose {
+  translation 4.35 -0.1538 0
+  rotation 0 1 0 0
+  children [
+    Cabinet {
+      translation -2.45 2.77 0
+      rotation 0 0 1 3.14159
+      name "C5"
+      depth 0.3
+      innerThickness 0
+      outerThickness 0
+      rowsHeights [
+        0.4, 0.15, 0.15, 0.15, 0.15
+      ]
+      columnsWidths [
+        0.44, 0.2, 0.2
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+    Cabinet {
+      translation -1 2.77 0
+      rotation 0 0 -0.9999999999999999 1.5707953071795862
+      name "C6"
+      depth 0.45
+      innerThickness 0.01
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        2.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.47451 0.67451 1
+      }
+    }
+    Cabinet {
+      translation -1 2.77088 0
+      rotation 0 0 1 1.5708
+      name "C7"
+      depth 0.45
+      innerThickness 0.01
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        2.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.121569 0.509804 0.101961
+      }
+    }
+    Cabinet {
+      translation 0.45 2.77 0
+      rotation 0 0 -1 5.307156870259904e-06
+      name "C8"
+      depth 0.3
+      innerThickness 0
+      outerThickness 0
+      rowsHeights [
+        0.4, 0.15, 0.15, 0.15, 0.15
+      ]
+      columnsWidths [
+        0.44, 0.2, 0.2
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+  ]
+}
+DEF C_GROUP3 Pose {
+  translation 4.35 -2.60468 0
+  rotation 0 1 0 0
+  children [
+    Cabinet {
+      translation -2.45 2.77 0
+      rotation 0 0 1 3.14159
+      name "C9"
+      depth 0.3
+      innerThickness 0
+      outerThickness 0
+      rowsHeights [
+        0.4, 0.15, 0.15, 0.15, 0.15
+      ]
+      columnsWidths [
+        0.44, 0.2, 0.2
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+    Cabinet {
+      translation -1 2.77 0
+      rotation 0 0 -0.9999999999999999 1.5707953071795862
+      name "C10"
+      depth 0.45
+      innerThickness 0.01
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        2.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.470588 0.286275 0.431373
+      }
+    }
+    Cabinet {
+      translation -1 2.77088 0
+      rotation 0 0 1 1.5708
+      name "C11"
+      depth 0.45
+      innerThickness 0.01
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        2.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 1 0.607843 0.85098
+      }
+    }
+    Cabinet {
+      translation 0.45 2.77 0
+      rotation 0 0 -1 5.307156870259904e-06
+      name "C12"
+      depth 0.3
+      innerThickness 0
+      outerThickness 0
+      rowsHeights [
+        0.4, 0.15, 0.15, 0.15, 0.15
+      ]
+      columnsWidths [
+        0.44, 0.2, 0.2
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+  ]
+}
+DEF C_GROUP4 Pose {
+  translation 4.35 -5.05558 0
+  rotation 0 1 0 0
+  children [
+    Cabinet {
+      translation -2.45 2.77 0
+      rotation 0 0 1 3.14159
+      name "C13"
+      depth 0.3
+      innerThickness 0
+      outerThickness 0
+      rowsHeights [
+        0.4, 0.15, 0.15, 0.15, 0.15
+      ]
+      columnsWidths [
+        0.44, 0.2, 0.2
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+    Cabinet {
+      translation -1 2.77 0
+      rotation 0 0 -0.9999999999999999 1.5707953071795862
+      name "C14"
+      depth 0.45
+      innerThickness 0.01
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        2.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 1 0.333333 0
+      }
+    }
+    Cabinet {
+      translation -1 2.77088 0
+      rotation 0 0 1 1.5708
+      name "C15"
+      depth 0.45
+      innerThickness 0.01
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        2.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 1 0.698039 0.27451
+      }
+    }
+    Cabinet {
+      translation 0.45 2.77 0
+      rotation 0 0 -1 5.307156870259904e-06
+      name "C16"
+      depth 0.3
+      innerThickness 0
+      outerThickness 0
+      rowsHeights [
+        0.4, 0.15, 0.15, 0.15, 0.15
+      ]
+      columnsWidths [
+        0.44, 0.2, 0.2
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+  ]
+}
+DEF C_GROUP5 Pose {
+  translation -0.55 -2.60468 0
+  rotation 0 1 0 0
+  children [
+    Cabinet {
+      translation -2.45 2.77 0
+      rotation 0 0 1 3.14159
+      name "C17"
+      depth 0.3
+      innerThickness 0
+      outerThickness 0
+      rowsHeights [
+        0.4, 0.15, 0.15, 0.15, 0.15
+      ]
+      columnsWidths [
+        0.44, 0.2, 0.2
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+    Cabinet {
+      translation -1 2.77 0
+      rotation 0 0 -0.9999999999999999 1.5707953071795862
+      name "C18"
+      depth 0.45
+      innerThickness 0.01
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        2.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.470588 0.286275 0.431373
+      }
+    }
+    Cabinet {
+      translation -1 2.77088 0
+      rotation 0 0 1 1.5708
+      name "C19"
+      depth 0.45
+      innerThickness 0.01
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        2.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 1 0.607843 0.85098
+      }
+    }
+    Cabinet {
+      translation 0.45 2.77 0
+      rotation 0 0 -1 5.307156870259904e-06
+      name "C20"
+      depth 0.3
+      innerThickness 0
+      outerThickness 0
+      rowsHeights [
+        0.4, 0.15, 0.15, 0.15, 0.15
+      ]
+      columnsWidths [
+        0.44, 0.2, 0.2
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+  ]
+}
+DEF C_GROUP6 Pose {
+  translation -0.55 -5.05558 0
+  rotation 0 1 0 0
+  children [
+    Cabinet {
+      translation -2.45 2.77 0
+      rotation 0 0 1 3.14159
+      name "C21"
+      depth 0.3
+      innerThickness 0
+      outerThickness 0
+      rowsHeights [
+        0.4, 0.15, 0.15, 0.15, 0.15
+      ]
+      columnsWidths [
+        0.44, 0.2, 0.2
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+    Cabinet {
+      translation -1 2.77 0
+      rotation 0 0 -0.9999999999999999 1.5707953071795862
+      name "C22"
+      depth 0.45
+      innerThickness 0.01
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        2.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 1 0.333333 0
+      }
+    }
+    Cabinet {
+      translation -1 2.77088 0
+      rotation 0 0 1 1.5708
+      name "C23"
+      depth 0.45
+      innerThickness 0.01
+      rowsHeights [
+        0.2, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        2.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 1 0.698039 0.27451
+      }
+    }
+    Cabinet {
+      translation 0.45 2.77 0
+      rotation 0 0 -1 5.307156870259904e-06
+      name "C24"
+      depth 0.3
+      innerThickness 0
+      outerThickness 0
+      rowsHeights [
+        0.4, 0.15, 0.15, 0.15, 0.15
+      ]
+      columnsWidths [
+        0.44, 0.2, 0.2
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 0.894118 0.894118 0.894118
+      }
+    }
+  ]
+}
+DEF WC_GROUP1 Pose {
+  translation 0.1 0.2 0
+  children [
+    Cabinet {
+      translation -3.45818 3.55186 -9.77017e-15
+      rotation 0 0 1 1.01503e-06
+      name "WC1"
+      depth 0.2
+      innerThickness 0.01
+      rowsHeights [
+        0.3, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        0.9, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 1 0.666667 0.498039
+      }
+    }
+    Cabinet {
+      translation -3.00996 4.4085 -6.21738e-15
+      rotation 0 0 1 -1.5707953071795862
+      name "WC1(2)"
+      depth 0.2
+      innerThickness 0.01
+      rowsHeights [
+        0.3, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        0.5, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 1 0.666667 0.498039
+      }
+    }
+    Cabinet {
+      translation -1.90512 4.41708 -4.44102e-15
+      rotation 0 0 1 -1.5707953071795862
+      name "WC1(1)"
+      depth 0.2
+      innerThickness 0.01
+      rowsHeights [
+        0.3, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        0.9, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 1 0.666667 0.498039
+      }
+    }
+    Cabinet {
+      translation -0.599494 4.41562 6.21712e-15
+      rotation 0 0 1 -1.5707953071795862
+      name "WC2"
+      depth 0.2
+      innerThickness 0.01
+      rowsHeights [
+        0.3, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        0.9, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 1 0.666667 0.498039
+      }
+    }
+    Cabinet {
+      translation 0.707506 4.41709 -1.48325e-13
+      rotation 0 0 1 -1.5707953071795862
+      name "WC3"
+      depth 0.2
+      innerThickness 0.01
+      rowsHeights [
+        0.3, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        0.9, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 1 0.666667 0.498039
+      }
+    }
+    Cabinet {
+      translation 2.02334 4.40825 -4.44102e-15
+      rotation 0 0 1 -1.5707953071795862
+      name "WC4"
+      depth 0.2
+      innerThickness 0.01
+      rowsHeights [
+        0.3, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        0.9, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 1 0.666667 0.498039
+      }
+    }
+    Cabinet {
+      translation 3.31151 4.39846 -1.86517e-13
+      rotation 0 0 1 -1.5707953071795862
+      name "WC5"
+      depth 0.2
+      innerThickness 0.01
+      rowsHeights [
+        0.3, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        0.9, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 1 0.666667 0.498039
+      }
+    }
+    Cabinet {
+      translation 4.59912 4.3952 0
+      rotation 0 0 1 -1.5707953071795862
+      name "WC6"
+      depth 0.2
+      innerThickness 0.01
+      rowsHeights [
+        0.3, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        0.9, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 1 0.666667 0.498039
+      }
+    }
+    Cabinet {
+      translation 5.9 4.38532 -2.1494e-13
+      rotation 0 0 -0.9999999999999999 1.5707953071795862
+      name "WC7"
+      depth 0.2
+      innerThickness 0.01
+      rowsHeights [
+        0.3, 0.2, 0.2, 0.2, 0.2
+      ]
+      columnsWidths [
+        0.9, 0.17, 0.17
+      ]
+      layout [
+        "Shelf (1, 5, 3, 0)"
+        "Shelf (1, 4, 3, 0)"
+        "Shelf (1, 3, 3, 0)"
+        "Shelf (1, 2, 3, 0)"
+        "Shelf (1, 3, 0, 1)"
+        "Shelf (2, 3, 0, 1)"
+      ]
+      handle NULL
+      primaryAppearance PaintedWood {
+        colorOverride 1 0.666667 0.498039
+      }
+    }
+  ]
+}
+DEF SHELF_GROUP1 Pose {
+  translation 6.3 -4.41908 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF1"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF2"
+    }
+  ]
+}
+DEF SHELF_GROUP2 Pose {
+  translation 5.7 -4.41908 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF3"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF4"
+    }
+  ]
+}
+DEF SHELF_GROUP3 Pose {
+  translation 5.1 -4.41908 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF5"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF6"
+    }
+  ]
+}
+DEF SHELF_GROUP4 Pose {
+  translation 4.5 -4.41908 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF7"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF8"
+    }
+  ]
+}
+DEF SHELF_GROUP5 Pose {
+  translation 3.9 -4.41908 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF9"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF10"
+    }
+  ]
+}
+DEF SHELF_GROUP6 Pose {
+  translation 3.3 -4.41908 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF11"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF12"
+    }
+  ]
+}
+DEF SHELF_GROUP7 Pose {
+  translation 2.7 -4.41908 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF13"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF14"
+    }
+  ]
+}
+DEF SHELF_GROUP8 Pose {
+  translation 2.1 -4.41908 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF15"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF16"
+    }
+  ]
+}
+DEF SHELF_GROUP9 Pose {
+  translation 1.5 -4.41908 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF17"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF18"
+    }
+  ]
+}
+DEF SHELF_GROUP10 Pose {
+  translation 0.9 -4.41908 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF19"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF20"
+    }
+  ]
+}
+DEF SHELF_GROUP11 Pose {
+  translation 0.3 -4.41908 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF21"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF22"
+    }
+  ]
+}
+DEF SHELF_GROUP12 Pose {
+  translation -0.3 -4.41908 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF23"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF24"
+    }
+  ]
+}
+DEF SHELF_GROUP13 Pose {
+  translation -0.9 -4.41908 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF25"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF26"
+    }
+  ]
+}
+DEF SHELF_GROUP14 Pose {
+  translation -1.5 -4.41908 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF27"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF28"
+    }
+  ]
+}
+DEF SHELF_GROUP15 Pose {
+  translation -2.1 -4.41908 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF29"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF30"
+    }
+  ]
+}
+DEF SHELF_GROUP16 Pose {
+  translation -2.7 -4.41908 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF31"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF32"
+    }
+  ]
+}
+DEF SHELF_GROUP17 Pose {
+  translation -3.3 -4.41908 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF33"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF34"
+    }
+  ]
+}
+DEF SHELF_GROUP18 Pose {
+  translation -3.9 -4.41908 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF35"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF36"
+    }
+  ]
+}
+DEF SHELF_GROUP19 Pose {
+  translation -4.5 -4.41908 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF37"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF38"
+    }
+  ]
+}
+DEF SHELF_GROUP20 Pose {
+  translation -5.1 -4.41908 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF39"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF40"
+    }
+  ]
+}
+DEF SHELF_GROUP21 Pose {
+  translation -5.7 -4.41908 0
+  rotation 0 0 1 1.5708
+  children [
+    RoCKInShelf {
+      name "RSHELF41"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF42"
+    }
+  ]
+}
+DEF SHELF_GROUP22 Pose {
+  translation 6.8 4 0
+  children [
+    RoCKInShelf {
+      name "RSHELF43"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF44"
+    }
+  ]
+}
+DEF SHELF_GROUP23 Pose {
+  translation 6.8 3.4 0
+  children [
+    RoCKInShelf {
+      name "RSHELF45"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF46"
+    }
+  ]
+}
+DEF SHELF_GROUP24 Pose {
+  translation 6.8 2.8 0
+  children [
+    RoCKInShelf {
+      name "RSHELF47"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF48"
+    }
+  ]
+}
+DEF SHELF_GROUP25 Pose {
+  translation 6.8 2.2 0
+  children [
+    RoCKInShelf {
+      name "RSHELF49"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF50"
+    }
+  ]
+}
+DEF SHELF_GROUP26 Pose {
+  translation 6.8 1.6 0
+  children [
+    RoCKInShelf {
+      name "RSHELF51"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF52"
+    }
+  ]
+}
+DEF SHELF_GROUP27 Pose {
+  translation 6.8 1 0
+  children [
+    RoCKInShelf {
+      name "RSHELF53"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF54"
+    }
+  ]
+}
+DEF SHELF_GROUP28 Pose {
+  translation 6.8 0.4 0
+  children [
+    RoCKInShelf {
+      name "RSHELF55"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF56"
+    }
+  ]
+}
+DEF SHELF_GROUP29 Pose {
+  translation 6.8 -0.2 0
+  children [
+    RoCKInShelf {
+      name "RSHELF57"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF58"
+    }
+  ]
+}
+DEF SHELF_GROUP30 Pose {
+  translation 6.8 -0.8 0
+  children [
+    RoCKInShelf {
+      name "RSHELF59"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF60"
+    }
+  ]
+}
+DEF SHELF_GROUP31 Pose {
+  translation 6.8 -1.4 0
+  children [
+    RoCKInShelf {
+      name "RSHELF61"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF62"
+    }
+  ]
+}
+DEF SHELF_GROUP32 Pose {
+  translation 6.8 -2 0
+  children [
+    RoCKInShelf {
+      name "RSHELF63"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF64"
+    }
+  ]
+}
+DEF SHELF_GROUP33 Pose {
+  translation 6.8 -2.6 0
+  children [
+    RoCKInShelf {
+      name "RSHELF65"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF66"
+    }
+  ]
+}
+DEF SHELF_GROUP34 Pose {
+  translation 6.8 -3.2 0
+  children [
+    RoCKInShelf {
+      name "RSHELF67"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF68"
+    }
+  ]
+}
+DEF SHELF_GROUP35 Pose {
+  translation 6.8 -3.8 0
+  children [
+    RoCKInShelf {
+      name "RSHELF69"
+    }
+    RoCKInShelf {
+      translation 0 0 0.5
+      name "RSHELF70"
+    }
+  ]
+}
+CeilingLight {
+  translation 3.5 3.5 2.5
+  name "CL5"
+  bulbColor 0.913725 0.72549 0.431373
+  supportColor 0.533333 0.541176 0.521569
+  pointLightColor 0.913725 0.72549 0.431373
+  pointLightIntensity 3
+  pointLightCastShadows TRUE
+}
+CeilingLight {
+  translation 3.5 -3 2.5
+  name "CL7"
+  bulbColor 0.913725 0.72549 0.431373
+  supportColor 0.533333 0.541176 0.521569
+  pointLightColor 0.913725 0.72549 0.431373
+  pointLightIntensity 3
+  pointLightCastShadows TRUE
+}
+CeilingLight {
+  translation 3.5 -1 2.5
+  name "CL6"
+  bulbColor 0.913725 0.72549 0.431373
+  supportColor 0.533333 0.541176 0.521569
+  pointLightColor 0.913725 0.72549 0.431373
+  pointLightIntensity 3
+  pointLightCastShadows TRUE
+}
+CeilingLight {
+  translation 3.5 1.3 2.5
+  name "CL7"
+  bulbColor 0.913725 0.72549 0.431373
+  supportColor 0.533333 0.541176 0.521569
+  pointLightColor 0.913725 0.72549 0.431373
+  pointLightIntensity 3
+  pointLightCastShadows TRUE
+}
+CeilingLight {
+  translation -1.9 -1 2.5
+  name "CL3"
+  bulbColor 0.913725 0.72549 0.431373
+  supportColor 0.533333 0.541176 0.521569
+  pointLightColor 0.913725 0.72549 0.431373
+  pointLightIntensity 3
+  pointLightCastShadows TRUE
+}
+CeilingLight {
+  translation -5 -1 2.5
+  name "CL3(1)"
+  bulbColor 0.913725 0.72549 0.431373
+  supportColor 0.533333 0.541176 0.521569
+  pointLightColor 0.913725 0.72549 0.431373
+  pointLightIntensity 3
+  pointLightCastShadows TRUE
+}
+CeilingLight {
+  translation -1.9 -3 2.5
+  name "CL4"
+  bulbColor 0.913725 0.72549 0.431373
+  supportColor 0.533333 0.541176 0.521569
+  pointLightColor 0.913725 0.72549 0.431373
+  pointLightIntensity 3
+  pointLightCastShadows TRUE
+}
+CeilingLight {
+  translation -5 -3 2.5
+  name "CL4(1)"
+  bulbColor 0.913725 0.72549 0.431373
+  supportColor 0.533333 0.541176 0.521569
+  pointLightColor 0.913725 0.72549 0.431373
+  pointLightIntensity 3
+  pointLightCastShadows TRUE
+}
+CeilingLight {
+  translation -1.9 3.5 2.5
+  name "CL1"
+  bulbColor 0.913725 0.72549 0.431373
+  supportColor 0.533333 0.541176 0.521569
+  pointLightColor 0.913725 0.72549 0.431373
+  pointLightIntensity 3
+  pointLightCastShadows TRUE
+}
+CeilingLight {
+  translation -5 3.5 2.5
+  name "CL1(2)"
+  bulbColor 0.913725 0.72549 0.431373
+  supportColor 0.533333 0.541176 0.521569
+  pointLightColor 0.913725 0.72549 0.431373
+  pointLightIntensity 3
+  pointLightCastShadows TRUE
+}
+CeilingLight {
+  translation -1.9 3.5 2.5
+  name "CL1(1)"
+  bulbColor 0.913725 0.72549 0.431373
+  supportColor 0.533333 0.541176 0.521569
+  pointLightColor 0.913725 0.72549 0.431373
+  pointLightIntensity 3
+  pointLightCastShadows TRUE
+}
+CeilingLight {
+  translation -1.9 1.3 2.5
+  name "CL2"
+  bulbColor 0.913725 0.72549 0.431373
+  supportColor 0.533333 0.541176 0.521569
+  pointLightColor 0.913725 0.72549 0.431373
+  pointLightIntensity 3
+  pointLightCastShadows TRUE
+}
+CeilingLight {
+  translation -5 1.3 2.5
+  name "CL2(1)"
+  bulbColor 0.913725 0.72549 0.431373
+  supportColor 0.533333 0.541176 0.521569
+  pointLightColor 0.913725 0.72549 0.431373
+  pointLightIntensity 3
+  pointLightCastShadows TRUE
+}
+Wall {
+  translation -7.02652 -0.0105347 1.42108e-14
+  name "LW-A1"
+  size 0.06 9.4 2.5
+  appearance DEF SIDE_WALLS Roughcast {
+    textureTransform TextureTransform {
+      scale 3 3
+    }
+  }
+}
+Wall {
+  translation 6.99967 -0.0356564 3.19744e-14
+  name "RW-A2"
+  size 0.06 9.4 2.5
+  appearance DEF SIDE_WALLS Roughcast {
+    textureTransform TextureTransform {
+      scale 3 3
+    }
+  }
+}
+Wall {
+  translation 1.16667 -4.71593 -3.55271e-15
+  rotation 0 0 -1 1.5708003061004252
+  name "W-B2"
+  size 0.06 1.2 2.5
+  appearance DEF INTER_WALLS Roughcast {
+    textureTransform TextureTransform {
+      scale 0.3 2.2
+    }
+  }
+}
+Wall {
+  translation -5.45558 -4.71026 -1.54543e-13
+  rotation 0 0 1 -1.5708003061004252
+  name "WB-2"
+  size 0.06 3.1 2.5
+  appearance DEF INTER_WALLS Roughcast {
+    textureTransform TextureTransform {
+      scale 0.3 2.2
+    }
+  }
+}
+Wall {
+  translation 6.56816 -4.71593 1.59872e-14
+  rotation 0 0 -1 1.5708
+  name "WB-2"
+  size 0.06 0.9 2.5
+  appearance DEF INTER_WALLS Roughcast {
+    textureTransform TextureTransform {
+      scale 0.3 2.2
+    }
+  }
+}
+Wall {
+  translation -0.00995724 4.6475 1.59872e-14
+  rotation 0 0 1 -1.5708003061004252
+  name "W-B1"
+  size 0.06 14 2.5
+}
+Window {
+  translation -3.17068 -4.71593 1.42109e-14
+  rotation 0 0 1 -1.5708003061004252
+  name "Window1"
+  size 0.04 1.6 2.5
+  bottomWallHeight 1
+  frameSize 0.02 0.05 0.02
+  frameAppearance DEF WINDOWS_WOOD MattePaint {
+    baseColor 0.133333 0.0666667 0
+  }
+}
+Window {
+  translation 2.46184 -4.71593 3.55271e-15
+  rotation 0 0 1 -1.5708003061004252
+  name "Window4"
+  size 0.04 1.5 2.5
+  bottomWallHeight 1
+  frameSize 0.02 0.05 0.02
+  frameAppearance DEF WINDOWS_WOOD MattePaint {
+    baseColor 0.133333 0.0666667 0
+  }
+}
+Window {
+  translation -1.66204 -4.71593 4.08562e-14
+  rotation 0 0 1 -1.5708003061004252
+  name "Window2"
+  size 0.04 1.5 2.5
+  bottomWallHeight 1
+  frameSize 0.02 0.05 0.02
+  frameAppearance DEF WINDOWS_WOOD MattePaint {
+    baseColor 0.133333 0.0666667 0
+  }
+}
+Window {
+  translation 3.96718 -4.71593 1.77636e-15
+  rotation 0 0 1 -1.5708003061004252
+  name "Window5"
+  size 0.04 1.5 2.5
+  bottomWallHeight 1
+  frameSize 0.02 0.05 0.02
+  frameAppearance DEF WINDOWS_WOOD MattePaint {
+    baseColor 0.133333 0.0666667 0
+  }
+}
+Window {
+  translation 5.36762 -4.7172 3.55272e-14
+  rotation 0 0 1 -1.5708003061004252
+  name "Window6"
+  size 0.04 1.5 2.5
+  bottomWallHeight 1
+  frameSize 0.02 0.05 0.02
+  frameAppearance DEF WINDOWS_WOOD MattePaint {
+    baseColor 0.133333 0.0666667 0
+  }
+}
+Window {
+  translation -0.170043 -4.71593 3.19745e-14
+  rotation 0 0 1 -1.5708003061004252
+  name "Window3"
+  size 0.04 1.5 2.5
+  bottomWallHeight 1
+  frameSize 0.02 0.05 0.02
+  frameAppearance DEF WINDOWS_WOOD MattePaint {
+    baseColor 0.133333 0.0666667 0
+  }
+}
+Door {
+  translation -5 4.72 0
+  rotation 0 0 -1 1.5708
+  size 0.06 1 2.5
+  doorThickness 0.09
+  frameSize 0.01 0.05 0.05
+  frameAppearance MattePaint {
+    baseColor 0.133333 0.0666667 0
+  }
+}
+Robot {
+  translation -3.36523 -3.37327 0.015
+  rotation 0 1 0 0.523599
+  children [
+    DEF BODY Pose {
+      translation 0 0 -0.015
+      children [
+        Group {
+        }
+        CadShape {
+          url [
+            "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/bitcraze/crazyflie/protos/meshes/cf2_assembly.dae"
+          ]
+        }
+      ]
+    }
+    DEF MULTIRANGER Pose {
+      translation 0 0 0.01
+      children [
+        DistanceSensor {
+          rotation 0 0 1 -1.57
+          name "range_right"
+          lookupTable [
+            0 0 0
+            2 2000 0
+          ]
+        }
+        DistanceSensor {
+          rotation 0 0 1 3.14
+          name "range_back"
+          lookupTable [
+            0 0 0
+            2 2000 0
+          ]
+        }
+        DistanceSensor {
+          rotation 0 0 1 1.57
+          name "range_left"
+          lookupTable [
+            0 0 0
+            2 2000 0
+          ]
+        }
+        DistanceSensor {
+          name "range_front"
+          lookupTable [
+            0 0 0
+            2 2000 0
+          ]
+        }
+      ]
+    }
+    Camera {
+      translation 0.03 0 0.01
+      fieldOfView 1.52
+      width 324
+      height 244
+    }
+    GPS {
+    }
+    Gyro {
+    }
+    InertialUnit {
+      name "inertial_unit"
+    }
+    DEF M1 Propeller {
+      shaftAxis 0 0 1
+      centerOfThrust 0.031 -0.031 0.008
+      thrustConstants -4e-05 0
+      torqueConstants 2.4e-06 0
+      fastHelixThreshold 50
+      device RotationalMotor {
+        name "m1_motor"
+        maxVelocity 600
+        maxTorque 30
+      }
+      fastHelix Solid {
+        translation 0.031 -0.031 0.008
+        children [
+          DEF FASTHELIX Shape {
+            appearance PBRAppearance {
+              baseColor 0.1 0.1 0.1
+              baseColorMap ImageTexture {
+                url [
+                  "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/default/protos/textures/fast_helix.png"
+                ]
+              }
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.001
+              radius 0.025
+            }
+          }
+        ]
+      }
+      slowHelix Solid {
+        translation 0.031 -0.031 0.008
+        children [
+          DEF PROP_SHAPE Shape {
+            appearance DEF PLASTIC PBRAppearance {
+              baseColor 0 0 0
+              metalness 0.3
+            }
+            geometry Mesh {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/bitcraze/crazyflie/protos/meshes/ccw_prop.dae"
+              ]
+            }
+          }
+        ]
+      }
+    }
+    DEF M2 Propeller {
+      shaftAxis 0 0 1
+      centerOfThrust -0.031 -0.031 0.008
+      thrustConstants 4e-05 0
+      torqueConstants 2.4e-06 0
+      fastHelixThreshold 50
+      device RotationalMotor {
+        name "m2_motor"
+        maxVelocity 600
+        maxTorque 30
+      }
+      fastHelix Solid {
+        translation -0.031 -0.031 0.008
+        children [
+          USE FASTHELIX
+        ]
+      }
+      slowHelix Solid {
+        translation -0.031 -0.031 0.008
+        children [
+          USE PROP_SHAPE
+        ]
+      }
+    }
+    DEF M3 Propeller {
+      shaftAxis 0 0 1
+      centerOfThrust -0.031 0.031 0.008
+      thrustConstants -4e-05 0
+      torqueConstants 2.4e-06 0
+      fastHelixThreshold 50
+      device RotationalMotor {
+        name "m3_motor"
+        maxVelocity 600
+        maxTorque 30
+      }
+      fastHelix Solid {
+        translation -0.031 0.031 0.008
+        children [
+          USE FASTHELIX
+        ]
+      }
+      slowHelix Solid {
+        translation -0.031 0.031 0.008
+        children [
+          USE PROP_SHAPE
+        ]
+      }
+    }
+    DEF M4 Propeller {
+      shaftAxis 0 0 1
+      centerOfThrust 0.031 0.031 0.008
+      thrustConstants 4e-05 0
+      torqueConstants 2.4e-06 0
+      fastHelixThreshold 50
+      device RotationalMotor {
+        name "m4_motor"
+        maxVelocity 600
+        maxTorque 30
+      }
+      fastHelix Solid {
+        translation 0.031 0.031 0.008
+        children [
+          USE FASTHELIX
+        ]
+      }
+      slowHelix DEF PROP Solid {
+        translation 0.031 0.031 0.007
+        children [
+          USE PROP_SHAPE
+        ]
+      }
+    }
+  ]
+  name "Crazyflie"
+  model "Bitcraze's Crazyflie"
+  boundingObject Cylinder {
+    height 0.03
+    radius 0.05
+  }
+  physics Physics {
+    density -1
+    mass 0.05
+  }
+  controller "crazyflie_auto_navigation"
+}
+RoCKInShelf {
+  translation -5.13 -0.963912 -1.77636e-15
+}
+RoCKInShelf {
+  translation -5.13 -0.963912 0.5
+  name "RoCKIn shelf(10)"
+}
+RoCKInShelf {
+  translation -5.13088 -1.55593 6.92779e-14
+  name "RoCKIn shelf(3)"
+}
+RoCKInShelf {
+  translation -5.13088 -1.55593 0.48
+  name "RoCKIn shelf(9)"
+}
+RoCKInShelf {
+  translation -5.12833 -2.17454 6.92779e-14
+  name "RoCKIn shelf(4)"
+}
+RoCKInShelf {
+  translation -5.12833 -2.17454 0.5
+  name "RoCKIn shelf(8)"
+}
+RoCKInShelf {
+  translation -5.13 -0.357832 0
+  name "RoCKIn shelf(2)"
+}
+RoCKInShelf {
+  translation -5.13 -0.357832 0.52
+  name "RoCKIn shelf(11)"
+}
+RoCKInShelf {
+  translation -5.13 0.26 0
+  name "RoCKIn shelf(1)"
+}
+RoCKInShelf {
+  translation -5.13 0.26 0.5
+  name "RoCKIn shelf(12)"
+}
+RoCKInShelf {
+  translation -5.1255 1.4595 7.4607e-14
+  name "RoCKIn shelf(5)"
+}
+RoCKInShelf {
+  translation -5.1255 1.4595 7.4607e-14
+  name "RoCKIn shelf(14)"
+}
+RoCKInShelf {
+  translation -5.1255 1.4595 0.52
+  name "RoCKIn shelf(15)"
+}
+RoCKInShelf {
+  translation -5.12093 2.05397 7.99361e-14
+  name "RoCKIn shelf(7)"
+}
+RoCKInShelf {
+  translation -5.12093 2.05397 0.51
+  name "RoCKIn shelf(16)"
+}
+RoCKInShelf {
+  translation -5.12485 0.860386 7.4607e-14
+  name "RoCKIn shelf(6)"
+}
+RoCKInShelf {
+  translation -5.12485 0.860386 0.5
+  name "RoCKIn shelf(13)"
+}
