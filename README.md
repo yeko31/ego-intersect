@@ -32,7 +32,7 @@ The workflow consists of:
 2. **Real-time processing** on an external computer using the trained CNN models.  
 3. **Automated control commands** sent back to the drone for navigation.  
 
-![Crazyflie Streaming and Processing](webots/realworld/crazyflie_streaming.png)
+<img src="https://github.com/yeko31/ego-intersect/raw/main/webots/Videos/real_world.gif" width="600">
 
 - The system successfully detects intersections and navigates autonomously in a test environment.  
 - Data is logged and categorized into the standard **left_right_forward folder format** for further analysis.
