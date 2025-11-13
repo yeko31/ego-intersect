@@ -8,10 +8,10 @@ The focus of this work is on **detecting and identifying intersections** during 
 ## 🧭 Project Overview
 | Description | Video |
 |--------------|--------|
-| Full Navigation Demo | <video src="Videos/1.webm" width="320" controls></video> |
-| Intersection Detection | <video src="Videos/2.webm" width="320" controls></video> |
-| Full Navigation Demo | <video src="Videos/3.webm" width="320" controls></video> |
-| Intersection Detection | <video src="Videos/4.webm" width="320" controls></video> |
+| Full Navigation Demo | <video src="Videos/1.webm" width="160" controls></video> |
+| Intersection Detection | <video src="Videos/2.webm" width="160" controls></video> |
+| Full Navigation Demo | <video src="Videos/3.webm" width="160" controls></video> |
+| Intersection Detection | <video src="Videos/4.webm" width="160" controls></video> |
 
 
 This project explores how vision-based systems can be used for autonomous navigation in structured road networks.  
