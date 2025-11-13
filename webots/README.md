@@ -8,7 +8,9 @@ The focus of this work is on **detecting and identifying intersections** during 
 ## 🧭 Project Overview
 | Description | Video |
 |--------------|--------|
-| Full Navigation Demo | <img src="https://github.com/yeko31/ego-intersect/raw/main/webots/Videos/3_up.gif" width="400"> |
+| ENV1 | <img src="https://github.com/yeko31/ego-intersect/raw/main/webots/Videos/3_up.gif" width="400"> |
+| ENV2 | <img src="https://github.com/yeko31/ego-intersect/raw/main/webots/Videos/3_up.gif" width="400"> |
+| ENV2 | <img src="https://github.com/yeko31/ego-intersect/raw/main/webots/Videos/3_up.gif" width="400"> |
 
 
 
