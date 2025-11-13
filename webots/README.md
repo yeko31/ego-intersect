@@ -6,6 +6,13 @@ The focus of this work is on **detecting and identifying intersections** during 
 ---
 
 ## 🧭 Project Overview
+| Description | Video |
+|--------------|--------|
+| Full Navigation Demo | <video src="videos/1.webm" width="320" controls></video> |
+| Intersection Detection | <video src="videos/2.webm" width="320" controls></video> |
+| Full Navigation Demo | <video src="videos/3.webm" width="320" controls></video> |
+| Intersection Detection | <video src="videos/4.webm" width="320" controls></video> |
+
 
 This project explores how vision-based systems can be used for autonomous navigation in structured road networks.  
 It uses **Webots** to simulate realistic environments and **Python-based controllers** for robot perception and decision-making.
@@ -19,5 +26,6 @@ It uses **Webots** to simulate realistic environments and **Python-based control
 ---
 
 ## 🏗️ Repository Structure
+
 
 
