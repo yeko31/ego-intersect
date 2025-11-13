@@ -1,0 +1,36 @@
+
+(A)Remember to first change the image saving prefix(line 62 and 367) by considering Aisle width, Environment Type and Altitude levels.
+
+Naming Convention for the saved images
+
+This happens according to the webots environemnt file and the altitude of the drone
+
+Aisle 1m
+env1_med_stocked -> a100_env1_ms_<height in cm>.jpg
+env2_no_stocked  -> a100_env2_ns_<height in cm>.jpg
+
+Aisle 1.3m
+env1_med_stocked -> a130_env1_ms_<height in cm>.jpg
+env2_no_stocked  -> a130_env2_ns_<height in cm>.jpg
+
+Aisle 2m
+env1_med_stocked -> a200_env1_ms_<height in cm>.jpg
+env2_no_stocked  -> a200_env2_ns_<height in cm>.jpg
+
+
+In each controller, change the OUTPUT_DIR and VALIDATION_DIR where you want to save the images.
+
+
+How to add the controllers to Webots and run the simulation
+
+1. Open Webots 2025a
+2. File -> New -> New Robot Controller
+3. Select Python and give an intuitive name
+4. Finish
+5. Copy and Paste the relavant code into the python file opened in text editor.
+6. Do the process mentioned in (A)
+7. Copy the pid_controller.py script to the relavant folder of the controller.
+8. Open Webots and select the Robot"Crazyflie" node and from the drop down select controller
+9. Choose the relavant controller
+10. Then click play button
+11. Wait until the crazyflie hovers and press keyboard "a" button to start autonomous data collection script.
