@@ -39,7 +39,7 @@ Grad-CAM highlights regions of the input image that contribute most to the netwo
 
 ## 📊 Results
 
-### 🔹 Multi Class Classification
+### 🔹 Multi Class(5) Classification
 <img src="https://github.com/yeko31/ego-intersect/raw/main/webots/Videos/multi_class.jpg" width="500">
 
   
@@ -56,7 +56,8 @@ Grad-CAM highlights regions of the input image that contribute most to the netwo
 - **real_world/** – All the scripts used in real world experiments.  
 - **gradCAM/** – Contains Grad-CAM script which was used to get results for ResNet50 and MobileNetV2.  
 - **test_script/** – Scripts of the unseen data validation.  
-- **Videos/** – Simulation and real-world demo videos.  
+- **Videos/** – Simulation and real-world demo videos.
+- To access the ResNet50 trained models. Please visit this <a href="https://drive.google.com/drive/folders/1-j5-8E0oE0xGsZj9cPOjt3NQ6nBiOblb?usp=drive_link">page</a>.
 
 
 ---
