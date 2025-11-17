@@ -22,7 +22,7 @@ The workflow consists of:
 ---
 ## 🕹️ Webots Simulation Platform
 <img src="https://github.com/yeko31/ego-intersect/raw/main/webots/Videos/2.webm.gif" width="400">
-For more details, please visit the Webots page.
+For more details, please visit the Webots <a href="url">page</a>.
 
 ## 🧠 Grad-CAM Analysis
 
