@@ -20,6 +20,9 @@ The workflow consists of:
 - Data is logged and categorized into the standard **left_right_forward folder format** for further analysis.
 
 ---
+## 🕹️ Webots Simulation Platform
+<img src="https://github.com/yeko31/ego-intersect/raw/main/webots/Videos/2.webm.gif" width="400">
+For more details, please visit the Webots page.
 
 ## 🧠 Grad-CAM Analysis
 
