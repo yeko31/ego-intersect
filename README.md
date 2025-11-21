@@ -57,7 +57,7 @@ Grad-CAM highlights regions of the input image that contribute most to the netwo
 - **gradCAM/** – Contains Grad-CAM script which was used to get results for ResNet50 and MobileNetV2.  
 - **test_script/** – Scripts of the unseen data validation.  
 - **Videos/** – Simulation and real-world demo videos.
-- **ResNet50 Models** - To access the ResNet50 trained models. Please visit this <a href="">page</a>.
+- **Trained Models** - To access all the trained models. Please visit this <a href="https://huggingface.co/yeko31/ego-intersect/tree/main">page</a>.
 - **Supplemantary Materials** - To access, please visit this <a href="https://github.com/yeko31/ego-intersect/raw/main/webots/Videos/">page</a>.
 
 
