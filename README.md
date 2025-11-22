@@ -24,6 +24,8 @@ The workflow consists of:
 <img src="https://github.com/yeko31/ego-intersect/raw/main/webots/Videos/2.webm.gif" width="400">
 For more details, please visit the Webots <a href="https://github.com/yeko31/ego-intersect/tree/main/webots">page</a>.
 
+## 🗂️ Dataset is available at this <a href="https://huggingface.co/datasets/yeko31/ego-intersect">page</a>.
+
 ## 🧠 Grad-CAM Analysis
 
 To understand and visualize the decision-making of our CNN models, we used **Grad-CAM** (Gradient-weighted Class Activation Mapping).  
