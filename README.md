@@ -58,7 +58,7 @@ Grad-CAM highlights regions of the input image that contribute most to the netwo
 | Param size(MB) |94.06 | 8.91   | 1.28 |
 | Forward/backward pass size (MB):   | 4173.73   |1709.60  | 136.48  |
 
-### 🔹 Model Performance Comparison on Test Data
+### 🔹 Model Performance Comparison on Test Data(RNet50-L2)
 
 | Parameter    | ResNet50(FP-32) | ResNet50-Static Quantized(Int-8) |
 |--------------|----------|---------------------------|
