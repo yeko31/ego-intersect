@@ -62,11 +62,11 @@ Grad-CAM highlights regions of the input image that contribute most to the netwo
 
 | Parameter    | ResNet50 | ResNet50-Static Quantized |
 |--------------|----------|---------------------------|
-| Hamming Loss | 0.2500     |    0.2533                       |
-| Precision    | 0.6667     |        0.6633                   |
+| Hamming Loss | 0.2500     |    0.2533(+1.32%)                       |
+| Precision    | 0.6667     |        0.6633(-0.51%)                   |
 | Recall       | 0.9362     |          0.9362                 |
-| F1-score     | 0.7788     |            0.7765               |
-| Model_size(MB)   | 94.06    |    24.1                       |
+| F1-score     | 0.7788     |            0.7765(-0.3%)               |
+| Model_size(MB)   | 94.06    |    24.1(-74.4%)                     |
 
 
 
