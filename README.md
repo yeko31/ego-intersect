@@ -52,11 +52,24 @@ Grad-CAM highlights regions of the input image that contribute most to the netwo
 <img src="https://github.com/yeko31/ego-intersect/raw/main/webots/Videos/orthogonal_study.jpg" width="500">
 
 ### 🔹 Performance Comparison 
-| Parameter | ResNet50 | MobileNetV2 | PULP-DroNetv3|
+| Parameter | ResNet50 | MobileNetV2 | PULP-DroNetv3(Quantized)|
 |----------|----------|----------|----------|
 | Flops  | 4109470720 | 312917056  | 50445696 |
 | Param size(MB) |94.06 | 8.91   | 1.28 |
 | Forward/backward pass size (MB):   | 4173.73   |1709.60  | 136.48  |
+
+### 🔹 Model Performance Comparison on Test Data
+
+| Parameter    | ResNet50 | ResNet50-Static Quantized |
+|--------------|----------|---------------------------|
+| Hamming Loss | 0.2500     |    0.2533                       |
+| Precision    | 0.6667     |        0.6633                   |
+| Recall       | 0.9362     |          0.9362                 |
+| F1-score     | 0.7788     |            0.7765               |
+| Model_size(MB)   | 94.06    |    24.1                       |
+
+
+
 
 
 ## 📂 File Highlights
