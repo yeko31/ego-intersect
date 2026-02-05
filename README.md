@@ -51,6 +51,14 @@ Grad-CAM highlights regions of the input image that contribute most to the netwo
 ### 🔹 Decomposition of labels
 <img src="https://github.com/yeko31/ego-intersect/raw/main/webots/Videos/orthogonal_study.jpg" width="500">
 
+### 🔹 Test Parameters on EgoCart<a href="https://iplab.dmi.unict.it/EgocentricShoppingCartLocalization/"> Dataset</a>(ImageNet Model).
+| Metric        | Our Test Data | EgoCart Data |
+|---------------|---------------|--------------|
+| Hamming Loss  | 0.08          | 0.15         |
+| Precision     | 0.88          | 0.89         |
+| Recall        | 0.97          | 0.83         |
+| F1-score      | 0.92          | 0.86         |
+
 ### 🔹 Performance Comparison 
 | Parameter | ResNet50 | MobileNetV2 | PULP-DroNetv3(Quantized)|
 |----------|----------|----------|----------|
@@ -67,7 +75,6 @@ Grad-CAM highlights regions of the input image that contribute most to the netwo
 | Recall       | 0.9362     |          0.9362                 |
 | F1-score     | 0.7788     |            0.7765(-0.3%)               |
 | Model_size(MB)   | 94.06    |    24.1(-74.4%)                     |
-
 
 
 
