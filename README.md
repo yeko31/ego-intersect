@@ -40,9 +40,15 @@ Grad-CAM highlights regions of the input image that contribute most to the netwo
   Lightweight model suitable for real-time deployment on resource-limited hardware. Grad-CAM highlights key road features while maintaining efficiency.  
 
 ## 📊 Results
-
 ### 🔹 Multi Class(5) Classification
 <img src="https://github.com/yeko31/ego-intersect/raw/main/webots/Videos/multi_class.jpg" width="500">
+
+### 🔹 Multi Label Classification
+| Left Grad-CAM | Forward Grad-CAM | Right Grad-CAM|
+|----------------|----------------|----------------|
+| ![GIF 1](https://github.com/yeko31/ego-intersect/raw/main/webots/Videos/t_org_l.gif)| ![GIF 2](https://github.com/yeko31/ego-intersect/raw/main/webots/Videos/1_forw.gif) | ![GIF 3](https://github.com/yeko31/ego-intersect/raw/main/webots/Videos/7_r.gif) |
+
+
 
   
 ### 🔹 Multi Label Classification
