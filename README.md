@@ -26,6 +26,27 @@ For more details, please visit the Webots <a href="https://github.com/yeko31/ego
 
 ## 🗂️ Dataset is available at this <a href="https://huggingface.co/datasets/yeko31/ego-intersect">page</a>.
 
+
+## 📄 Conference Paper
+
+**Towards Vision-Based Intersection Navigation: Explainable Insights from Synthetic and Real-World Model Adaptation**  
+Yehan Kodithuwakku, Chathuranga Hettiarachchi, Sulochana Sooriyaarachchi  
+*2026 International Conference on Artificial Intelligence in Information and Communication (ICAIIC)*  
+Pages: 1054–1059  
+DOI: https://doi.org/10.1109/ICAIIC68212.2026.11454303  
+
+```bibtex
+@INPROCEEDINGS{11454303,
+  author={Kodithuwakku, Yehan and Hettiarachchi, Chathuranga and Sooriyaarachchi, Sulochana},
+  booktitle={2026 International Conference on Artificial Intelligence in Information and Communication (ICAIIC)}, 
+  title={Towards Vision-Based Intersection Navigation: Explainable Insights from Synthetic and Real-World Model Adaptation}, 
+  year={2026},
+  pages={1054-1059},
+  doi={10.1109/ICAIIC68212.2026.11454303}
+}
+
+```
+
 ## 🧠 Grad-CAM Analysis
 
 To understand and visualize the decision-making of our CNN models, we used **Grad-CAM** (Gradient-weighted Class Activation Mapping).  
